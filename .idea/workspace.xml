@@ -11,6 +11,9 @@
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/webmozart/assert" />
@@ -124,6 +127,7 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1intyAiUnQyCbtcqHEo4iL1150Q" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -151,11 +155,33 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1602555446270</updated>
-      <workItem from="1602555451937" duration="153000" />
+      <workItem from="1602555451937" duration="686000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="463" y="110" key="FileChooserDialogImpl" timestamp="1602555997575">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="463" y="110" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1602555997575" />
+    <state x="275" y="98" key="Vcs.Push.Dialog.v2" timestamp="1602556142765">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="275" y="98" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1602556142765" />
+    <state x="500" y="279" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1602556149935">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="500" y="279" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.738@0.0.1366.738" timestamp="1602556149935" />
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1602555681693">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1602555681693" />
+    <state x="513" y="160" key="svn.repositoryBrowser" timestamp="1602556101192">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="513" y="160" key="svn.repositoryBrowser/0.0.1366.738@0.0.1366.738" timestamp="1602556101192" />
   </component>
 </project>
