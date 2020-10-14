@@ -2,19 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8014a567-7f8f-4f60-9e07-4b74e2f59d3d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Functions.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/ConnectController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/static/css/connect.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/static/css/connect.styl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/connect/login.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/connect/master.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/ecommerce.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ecommerce.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/laravel-plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/laravel-plugin.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
@@ -131,23 +138,36 @@
       <path value="$PROJECT_DIR$/vendor/facade/flare-client-php" />
       <path value="$PROJECT_DIR$/vendor/psy/psysh" />
       <path value="$PROJECT_DIR$/vendor/paragonie/random_compat" />
+      <path value="$PROJECT_DIR$/vendor/league/oauth1-client" />
+      <path value="$PROJECT_DIR$/vendor/laravel/socialite" />
+      <path value="$PROJECT_DIR$/vendor/laravelcollective/html" />
     </include_path>
   </component>
   <component name="ProjectId" id="1intyAiUnQyCbtcqHEo4iL1150Q" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\laragon\www\ecommerce\public" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -163,7 +183,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1602555446270</updated>
-      <workItem from="1602555451937" duration="2290000" />
+      <workItem from="1602555451937" duration="2554000" />
+      <workItem from="1602605947041" duration="8963000" />
+      <workItem from="1602628323470" duration="2216000" />
     </task>
     <task id="LOCAL-00001" summary="Ecommerce laravel">
       <created>1602556183998</created>
@@ -172,37 +194,74 @@
       <option name="project" value="LOCAL" />
       <updated>1602556183998</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Ecommerce laravel Ropa">
+      <created>1602557967271</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1602557967271</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Ecommerce laravel" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ecommerce laravel" />
+    <MESSAGE value="Ecommerce laravel Ropa" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ecommerce laravel Ropa" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="306" y="0" key="CommitChangelistDialog2" timestamp="1602556182165">
+    <state x="309" y="47" key="#Inspections" timestamp="1602609671854">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="306" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1602556182165" />
+    <state x="309" y="47" key="#Inspections/0.0.1366.738@0.0.1366.738" timestamp="1602609671854" />
+    <state x="436" y="159" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1602608904446">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="436" y="159" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.738@0.0.1366.738" timestamp="1602608904446" />
+    <state x="306" y="0" key="CommitChangelistDialog2" timestamp="1602557965780">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="306" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1602557965780" />
+    <state x="350" y="147" key="EditFileWatcherDialog" timestamp="1602608932521">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="350" y="147" key="EditFileWatcherDialog/0.0.1366.738@0.0.1366.738" timestamp="1602608932521" />
     <state x="463" y="110" key="FileChooserDialogImpl" timestamp="1602555997575">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="463" y="110" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1602555997575" />
-    <state x="517" y="288" key="NewPhpFileDialog" timestamp="1602557464787">
+    <state width="1323" height="175" key="GridCell.Tab.0.bottom" timestamp="1602627134793">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="517" y="288" key="NewPhpFileDialog/0.0.1366.738@0.0.1366.738" timestamp="1602557464787" />
-    <state x="184" y="14" key="SettingsEditor" timestamp="1602556618740">
+    <state width="1323" height="175" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1602627134793" />
+    <state width="1323" height="175" key="GridCell.Tab.0.center" timestamp="1602627134777">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="184" y="14" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1602556618740" />
-    <state x="275" y="98" key="Vcs.Push.Dialog.v2" timestamp="1602556227442">
+    <state width="1323" height="175" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1602627134777" />
+    <state width="1323" height="175" key="GridCell.Tab.0.left" timestamp="1602627134777">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="275" y="98" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1602556227442" />
+    <state width="1323" height="175" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1602627134777" />
+    <state width="1323" height="175" key="GridCell.Tab.0.right" timestamp="1602627134777">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1323" height="175" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1602627134777" />
+    <state x="517" y="288" key="NewPhpFileDialog" timestamp="1602607991723">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="517" y="288" key="NewPhpFileDialog/0.0.1366.738@0.0.1366.738" timestamp="1602607991723" />
+    <state x="184" y="14" key="SettingsEditor" timestamp="1602609840464">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="184" y="14" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1602609840464" />
+    <state x="275" y="98" key="Vcs.Push.Dialog.v2" timestamp="1602557992300">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="275" y="98" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1602557992300" />
     <state x="500" y="279" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1602556149935">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
