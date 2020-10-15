@@ -1,12 +1,57 @@
 body {
     background-color: #f6f6f6;
     margin: 0px;
+    font-size: 14px;
 }
 
 .box {
     background-color: #fff;
     border-radius: 8px;
     border: 1px solid #d6d6d6;
-    padding: 16px;
     width: 500px;
+    box-shadow: 3px 4px 4px rgba(0,0,0,0.3);
+
+    .header {
+        a {
+            img {
+                margin-bottom: -80px;
+                margin-top: -40px;
+                margin-left: 140px;
+            }
+        }
+    }
+
+    .inside {
+        padding: 16px;
+        .footer {
+            text-align: center;
+            a {
+                display: inline-block;
+
+                &:last-child {
+                    margin-left: 80px;
+                }
+            }
+        }
+
+    }
+
+    .form-control {
+        &:focus,
+        &:active {
+          outline: none;
+          box-shadow: none;
+        }
+    }
+
+    .btn-primary {
+        background-color: #646464;
+        border: none;
+        transition: all 200ms;
+        &:hover {
+            background-color: #474545;
+        }
+    }
+
+
 }

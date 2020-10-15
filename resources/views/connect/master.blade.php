@@ -8,11 +8,12 @@
     <title>Gentleman - @yield('title')</title>
     <link rel="stylesheet" href="{{  url('/css/bootstrap.min.css')  }}">
     <link rel="stylesheet" href="{{ url('/static/css/connect.css?=v'.time()) }}">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/75b758ac89.js" crossorigin="anonymous"></script>
 </head>
 <body>
-        @section('content')
-
-        @show
+    @section('content')
+    @show
 </body>
 </html>

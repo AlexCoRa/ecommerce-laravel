@@ -2,18 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8014a567-7f8f-4f60-9e07-4b74e2f59d3d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/ConnectController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/css/connect.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/css/connect.styl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/connect/login.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/connect/master.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/ecommerce.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ecommerce.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/static/images/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/connect/register.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ConnectController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ConnectController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/css/connect.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/static/css/connect.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/css/connect.styl" beforeDir="false" afterPath="$PROJECT_DIR$/public/static/css/connect.styl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/connect/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/connect/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/connect/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/connect/master.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -155,7 +153,6 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -166,6 +163,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\laragon\www\ecommerce\resources\lang" />
+      <recent name="C:\laragon\www\ecommerce\public\static\images" />
       <recent name="C:\laragon\www\ecommerce\public" />
     </key>
   </component>
@@ -185,7 +184,8 @@
       <updated>1602555446270</updated>
       <workItem from="1602555451937" duration="2554000" />
       <workItem from="1602605947041" duration="8963000" />
-      <workItem from="1602628323470" duration="2216000" />
+      <workItem from="1602628323470" duration="2396000" />
+      <workItem from="1602714625306" duration="13627000" />
     </task>
     <task id="LOCAL-00001" summary="Ecommerce laravel">
       <created>1602556183998</created>
@@ -201,7 +201,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602557967271</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Ecommerce laravel Ropa">
+      <created>1602638535599</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1602638535599</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -222,10 +229,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="436" y="159" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.738@0.0.1366.738" timestamp="1602608904446" />
-    <state x="306" y="0" key="CommitChangelistDialog2" timestamp="1602557965780">
+    <state x="306" y="0" key="CommitChangelistDialog2" timestamp="1602638531068">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="306" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1602557965780" />
+    <state x="306" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1602638531068" />
     <state x="350" y="147" key="EditFileWatcherDialog" timestamp="1602608932521">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -258,14 +265,22 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="184" y="14" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1602609840464" />
-    <state x="275" y="98" key="Vcs.Push.Dialog.v2" timestamp="1602557992300">
+    <state x="275" y="98" key="Vcs.Push.Dialog.v2" timestamp="1602638549881">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="275" y="98" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1602557992300" />
+    <state x="275" y="98" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1602638549881" />
     <state x="500" y="279" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1602556149935">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="500" y="279" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.738@0.0.1366.738" timestamp="1602556149935" />
+    <state x="391" y="57" width="583" height="624" key="find.popup" timestamp="1602720697132">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="391" y="57" width="583" height="624" key="find.popup/0.0.1366.738@0.0.1366.738" timestamp="1602720697132" />
+    <state x="339" y="165" key="run.anything.popup" timestamp="1602721009530">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="339" y="165" key="run.anything.popup/0.0.1366.738@0.0.1366.738" timestamp="1602721009530" />
     <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1602555681693">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
