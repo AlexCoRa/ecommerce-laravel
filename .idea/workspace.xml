@@ -1,17 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8014a567-7f8f-4f60-9e07-4b74e2f59d3d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/static/images/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/connect/register.blade.php" afterDir="false" />
+    <list default="true" id="8014a567-7f8f-4f60-9e07-4b74e2f59d3d" name="Default Changelist" comment="Login and Register">
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/DashboardController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Middleware/IsAdmin.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/static/css/admin.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/static/css/admin.styl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/dashboard.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/master.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/sidebar.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/admin.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ConnectController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ConnectController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/static/css/connect.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/static/css/connect.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/static/css/connect.styl" beforeDir="false" afterPath="$PROJECT_DIR$/public/static/css/connect.styl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/RedirectIfAuthenticated.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/RedirectIfAuthenticated.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/connect/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/connect/login.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/connect/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/connect/master.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/connect/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/connect/register.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -185,7 +190,8 @@
       <workItem from="1602555451937" duration="2554000" />
       <workItem from="1602605947041" duration="8963000" />
       <workItem from="1602628323470" duration="2396000" />
-      <workItem from="1602714625306" duration="13627000" />
+      <workItem from="1602714625306" duration="13747000" />
+      <workItem from="1602777219895" duration="15928000" />
     </task>
     <task id="LOCAL-00001" summary="Ecommerce laravel">
       <created>1602556183998</created>
@@ -208,7 +214,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602638535599</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Login and Register">
+      <created>1602730215133</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1602730215133</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -218,7 +231,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Ecommerce laravel" />
     <MESSAGE value="Ecommerce laravel Ropa" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ecommerce laravel Ropa" />
+    <MESSAGE value="Login and Register" />
+    <option name="LAST_COMMIT_MESSAGE" value="Login and Register" />
   </component>
   <component name="WindowStateProjectService">
     <state x="309" y="47" key="#Inspections" timestamp="1602609671854">
@@ -229,10 +243,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="436" y="159" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.738@0.0.1366.738" timestamp="1602608904446" />
-    <state x="306" y="0" key="CommitChangelistDialog2" timestamp="1602638531068">
+    <state x="306" y="0" key="CommitChangelistDialog2" timestamp="1602795771258">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="306" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1602638531068" />
+    <state x="306" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1602795771258" />
     <state x="350" y="147" key="EditFileWatcherDialog" timestamp="1602608932521">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -265,10 +279,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="184" y="14" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1602609840464" />
-    <state x="275" y="98" key="Vcs.Push.Dialog.v2" timestamp="1602638549881">
+    <state x="275" y="98" key="Vcs.Push.Dialog.v2" timestamp="1602730239870">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="275" y="98" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1602638549881" />
+    <state x="275" y="98" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1602730239870" />
     <state x="500" y="279" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1602556149935">
       <screen x="0" y="0" width="1366" height="738" />
     </state>

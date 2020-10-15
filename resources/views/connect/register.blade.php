@@ -18,35 +18,34 @@
                 <div class="input-group-prepend">
                     <div class="input-group-text"><i class="fas fa-user"></i></div>
                 </div>
-                {!! Form::text('name', null, ['class' => 'form-control']) !!}
-            </div>
+                {!! Form::text('name', null, ['class' => 'form-control', 'required']) !!}</div>
             <label for="lastname">Apellidos:</label>
             <div class="input-group mb-2">
                 <div class="input-group-prepend">
                     <div class="input-group-text"><i class="fas fa-user-tag"></i></div>
                 </div>
-                {!! Form::text('lastname', null, ['class' => 'form-control']) !!}
+                {!! Form::text('lastname', null, ['class' => 'form-control', 'required']) !!}
             </div>
             <label for="email">Email:</label>
             <div class="input-group mb-2">
                 <div class="input-group-prepend">
                     <div class="input-group-text"><i class="far fa-envelope-open"></i></div>
                 </div>
-                {!! Form::email('email', null, ['class' => 'form-control']) !!}
+                {!! Form::email('email', null, ['class' => 'form-control', 'required']) !!}
             </div>
             <label for="password">Password:</label>
             <div class="input-group mb-2">
                 <div class="input-group-prepend">
                     <div class="input-group-text"><i class="fas fa-lock-open"></i></div>
                 </div>
-                {!! Form::password('password', ['class' => 'form-control']) !!}
+                {!! Form::password('password', ['class' => 'form-control', 'required']) !!}
             </div>
             <label for="cpassword">Confirmar Password:</label>
             <div class="input-group mb-2">
                 <div class="input-group-prepend">
                     <div class="input-group-text"><i class="fas fa-lock"></i></div>
                 </div>
-                {!! Form::password('cpassword', ['class' => 'form-control']) !!}
+                {!! Form::password('cpassword', ['class' => 'form-control', 'required']) !!}
             </div>
             {!! Form::submit('Registrarse', ['class' => 'btn btn-primary mt-2 w-100']) !!}
             @if(\Illuminate\Support\Facades\Session::has('message'))
@@ -64,7 +63,7 @@
                             $('.alert').slideDown();
                             setTimeout(function () {
                                 $('.alert').slideUp();
-                            }, 3000);
+                            }, 5000);
                         </script>
                     </div>
                 </div>
