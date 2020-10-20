@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8014a567-7f8f-4f60-9e07-4b74e2f59d3d" name="Default Changelist" comment="Login and Register">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/DashboardController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Middleware/IsAdmin.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/css/admin.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/css/admin.styl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/dashboard.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/master.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/sidebar.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/admin.php" afterDir="false" />
+    <list default="true" id="8014a567-7f8f-4f60-9e07-4b74e2f59d3d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/CategoryController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/ProductController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/UserController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/static/js/admin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/categories/home.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/products/add.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/products/home.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/users/home.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ConnectController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ConnectController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/RedirectIfAuthenticated.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/RedirectIfAuthenticated.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/connect/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/connect/login.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/connect/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/connect/register.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/css/admin.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/static/css/admin.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/css/admin.styl" beforeDir="false" afterPath="$PROJECT_DIR$/public/static/css/admin.styl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/dashboard.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/master.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/sidebar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/admin.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,7 +159,7 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/admin/products" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -167,7 +167,11 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\laragon\www\ecommerce\resources\views\admin\products" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\laragon\www\ecommerce\public\static\libs" />
       <recent name="C:\laragon\www\ecommerce\resources\lang" />
       <recent name="C:\laragon\www\ecommerce\public\static\images" />
       <recent name="C:\laragon\www\ecommerce\public" />
@@ -191,7 +195,9 @@
       <workItem from="1602605947041" duration="8963000" />
       <workItem from="1602628323470" duration="2396000" />
       <workItem from="1602714625306" duration="13747000" />
-      <workItem from="1602777219895" duration="15928000" />
+      <workItem from="1602777219895" duration="16001000" />
+      <workItem from="1603125667113" duration="698000" />
+      <workItem from="1603133961957" duration="22078000" />
     </task>
     <task id="LOCAL-00001" summary="Ecommerce laravel">
       <created>1602556183998</created>
@@ -221,7 +227,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602730215133</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Dashboard Admin">
+      <created>1602795794846</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1602795794846</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -232,7 +245,8 @@
     <MESSAGE value="Ecommerce laravel" />
     <MESSAGE value="Ecommerce laravel Ropa" />
     <MESSAGE value="Login and Register" />
-    <option name="LAST_COMMIT_MESSAGE" value="Login and Register" />
+    <MESSAGE value="Dashboard Admin" />
+    <option name="LAST_COMMIT_MESSAGE" value="Dashboard Admin" />
   </component>
   <component name="WindowStateProjectService">
     <state x="309" y="47" key="#Inspections" timestamp="1602609671854">
@@ -243,10 +257,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="436" y="159" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.738@0.0.1366.738" timestamp="1602608904446" />
-    <state x="306" y="0" key="CommitChangelistDialog2" timestamp="1602795771258">
+    <state x="306" y="0" key="CommitChangelistDialog2" timestamp="1602795791863">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="306" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1602795771258" />
+    <state x="306" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1602795791863" />
     <state x="350" y="147" key="EditFileWatcherDialog" timestamp="1602608932521">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -279,18 +293,18 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="184" y="14" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1602609840464" />
-    <state x="275" y="98" key="Vcs.Push.Dialog.v2" timestamp="1602730239870">
+    <state x="275" y="98" key="Vcs.Push.Dialog.v2" timestamp="1602795813769">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="275" y="98" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1602730239870" />
+    <state x="275" y="98" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1602795813769" />
     <state x="500" y="279" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1602556149935">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="500" y="279" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.738@0.0.1366.738" timestamp="1602556149935" />
-    <state x="391" y="57" width="583" height="624" key="find.popup" timestamp="1602720697132">
+    <state x="391" y="57" width="583" height="624" key="find.popup" timestamp="1603145531877">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="391" y="57" width="583" height="624" key="find.popup/0.0.1366.738@0.0.1366.738" timestamp="1602720697132" />
+    <state x="391" y="57" width="583" height="624" key="find.popup/0.0.1366.738@0.0.1366.738" timestamp="1603145531877" />
     <state x="339" y="165" key="run.anything.popup" timestamp="1602721009530">
       <screen x="0" y="0" width="1366" height="738" />
     </state>

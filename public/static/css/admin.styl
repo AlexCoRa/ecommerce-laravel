@@ -16,24 +16,22 @@ html,body,ul,h2,h3,h4,h5 {
         position: relative;
         z-index: 999;
         width: 17%;
-        background-color: red;
     }
     .col2 {
         float: left;
         width: 83%;
-        background-color: blue;
     }
 
     .sidebar {
         background-color: #fff;
-        min-height: 100vh;
+        min-height: 125vh;
         .section-top {
             background-color: #eee;
             box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15);
         }
         .logo {
             display: block;
-            margin: -40px auto;
+            margin: -40px 20px;
             padding-top: -24px;
         }
         .user {
@@ -77,6 +75,58 @@ html,body,ul,h2,h3,h4,h5 {
                         margin-top: 15px;
                     }
                 }
+            }
+        }
+    }
+    .navbar {
+        background-color: #eee;
+        a {
+            color: #444;
+        }
+    }
+    .page {
+        padding-top: 16px;
+        padding-bottom: 4px;
+        .breadcrumb {
+            background-color: #fff;
+            box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.10);
+            .breadcrumb-item {
+                a {
+                    text-decoration: none;
+                    color: #8998ac;
+                    transition: all 200ms;
+                    &:hover {
+                        color: #444;
+                    }
+                }
+            }
+        }
+    }
+    .panel {
+        background-color: #fff !important;
+        border-radius: 10px;
+        border-bottom: 2px solid #aaa;
+        width: 100%;
+        .header {
+            border-bottom: 1px solid #ccc;
+
+            .title {
+                display: inline-block;
+                color: #19213d;
+                font-size: 1.1em;
+                padding: 12px 16px;
+            }
+        }
+        .inside {
+            padding: 16px;
+            .opts {
+                a {
+                    display: inline-block;
+                    padding: 0px 12px;
+                }
+            }
+            .table td, .table th {
+                border-top: none !important;
             }
         }
     }

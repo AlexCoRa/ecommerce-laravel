@@ -19,19 +19,67 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="{{  url('/js/bootstrap.min.js')  }}"></script>
 
+    <script src="{{ url('/static/libs/ckeditor/ckeditor.js') }}"></script>
+    <script src="{{ url('/static/js/admin.js') }}"></script>
+
     <script>
         $(document).ready(function () {
             $('[data-toggle="tooltip"]').tooltip()
         });
     </script>
 
-    <title>@yield('title')</title>
+    <title>Gentleman - @yield('title')</title>
 </head>
 <body>
 <div class="wrapper">
-    <div class="row">
-        <div class="col-2">@include('admin.sidebar')</div>
-        <div class="col-10"></div>
+    <div class="col1">@include('admin.sidebar')</div>
+    <div class="col2">
+        <nav class="navbar navbar-expand-lg shadow">
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="{{ '/admin' }}" class="nav-link"><i class="fas fa-home"></i> Dashboard</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="page">
+
+            <div class="container-fluid">
+                <nav aria-label="breadcrumb shadow">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item">
+                            <a href="{{ url('/admin') }}"><i class="fas fa-home"></i> Dashboard</a>
+                        </li>
+                        @section('breadcrumb')
+                        @show
+                    </ol>
+                </nav>
+            </div>
+        </div>
+        @if(\Illuminate\Support\Facades\Session::has('message'))
+            <div class="container-fluid">
+                <div class="alert alert-{{\Illuminate\Support\Facades\Session::get('typealert')}} mt-2" style="display: block; margin-bottom: 16px;">
+                    {{ \Illuminate\Support\Facades\Session::get('message') }}
+                    @if($errors->any())
+                        <ul>
+                            @foreach($errors->all() as $error)
+                                <li>{{ $error }}</li>
+                            @endforeach
+                        </ul>
+                    @endif
+                    <script>
+                        $('.alert').slideDown();
+                        setTimeout(function () {
+                            $('.alert').slideUp();
+                        }, 10000);
+                    </script>
+                </div>
+            </div>
+        @endif
+        @section('content')
+        @show
     </div>
 </div>
 </body>

@@ -18,6 +18,7 @@
         <ul>
             <li><a href="{{ url('/admin') }}"><i class="fas fa-home"></i>Dashboard</a></li>
             <li><a href="{{ url('/admin/products') }}"><i class="fas fa-boxes"></i>Productos</a></li>
+            <li><a href="{{ url('/admin/categories') }}"><i class="fas fa-folder-open"></i>Categorias</a></li>
             <li><a href="{{ url('/admin/users') }}"><i class="fas fa-users"></i>Usuarios</a></li>
         </ul>
     </div>
