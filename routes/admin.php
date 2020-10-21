@@ -17,6 +17,10 @@ Route::prefix('/admin')->group(function () {
     Route::get('/product/add', [ProductController::class, 'getProductAdd'])->name('addproducts');
 
     //Module Categories
-    Route::get('/categories', [CategoryController::class, 'getHome'])->name('categories');
-    Route::get('/category/add', [CategoryController::class, 'getCategoryAdd'])->name('addcategory');
+    Route::get('/categories/{module}', [CategoryController::class, 'getHome'])->name('categories');
+    Route::post('/category/add', [CategoryController::class, 'postCategoryAdd'])->name('addcategory');
+    Route::get('/category/{id}/edit', [CategoryController::class, 'getCategoryEdit'])->name('editcategory');
+    Route::post('/category/{id}/edit', [CategoryController::class, 'postCategoryEdit'])->name('editcategory');
+    Route::get('/category/{id}/delete', [CategoryController::class, 'getCategoryDelete'])->name('deletecategory');
+
 });

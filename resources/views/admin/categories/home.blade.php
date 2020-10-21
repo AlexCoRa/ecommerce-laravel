@@ -3,7 +3,7 @@
 @section('title', 'Categorias')
 
 @section('breadcrumb')
-    <li class="breadcrumb-item"><a href="{{ url('/admin/categories') }}"><i class="fas fa-folder-open"></i> Categorias</a></li>
+    <li class="breadcrumb-item"><a href="{{ url('/admin/categories/0') }}"><i class="fas fa-folder-open"></i> Categorias</a></li>
 @endsection
 
 @section('content')
@@ -31,15 +31,57 @@
                                 </div>
                                 {!! Form::select('module', getModulesArray(), 0, ['class' => 'custom-select']) !!}
                             </div>
-                            <label class="mt-3" for="icon">Ícono:</label>
+                            <label class="mt-3" for="icono">Ícono:</label>
                             <div class="input-group">
                                 <div class="input-group-prepend">
                                     <div class="input-group-text"><i class="fas fa-icons"></i></div>
                                 </div>
-                                {!! Form::text('icon', null,['class' => 'form-control']) !!}
+                                {!! Form::text('icono', null,['class' => 'form-control']) !!}
                             </div>
                             {!! Form::submit('Guardar', ['class'=>'btn btn-success mt-3']) !!}
                             {!! Form::close() !!}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="panel shadow">
+                    <div class="header">
+                        <h2 class="title"><i class="fas fa-folder-open"></i> Categorias</h2>
+                    </div>
+                    <div class="inside">
+                        <div class="container">
+                            <div class="nav nav-pills nav-fill">
+                                @foreach(getModulesArray() as $m => $k)
+                                    <a href="{{ url('/admin/categories/'.$m) }}" class="link-a nav-link">{{ $k }}</a>
+                                @endforeach
+                            </div>
+                            <table class="table table-striped mt-2">
+                                <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Icono</th>
+                                    <th scope="col">Nombre</th>
+                                    <th scope="col"></th>
+                                    <th scope="col"></th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach($cats as $cat)
+                                        <tr>
+                                            <th scope="row"> {{ $cat->id }} </th>
+                                            <td>{!! htmlspecialchars_decode($cat->icono) !!}</td>
+                                            <td>{{ $cat->name }}</td>
+                                            <td>
+                                                <a href="{{ url('/admin/category/'.$cat->id.'/edit') }}" data-toggle="tooltip" data-placement="top" title="Editar"><i class="fas fa-edit"></i></a>
+                                            </td>
+                                            <td>
+                                                <a href="{{ url('/admin/category/'.$cat->id.'/delete') }}" data-toggle="tooltip" data-placement="top" title="Eliminar"><i class="fas fa-trash-alt"></i></a>
+                                            </td>
+                                        </tr>
+                                    @endforeach
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>
