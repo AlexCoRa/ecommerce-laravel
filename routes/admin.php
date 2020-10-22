@@ -16,6 +16,8 @@ Route::prefix('/admin')->group(function () {
     Route::get('/products', [ProductController::class, 'getHome'])->name('products');
     Route::get('/product/add', [ProductController::class, 'getProductAdd'])->name('addproducts');
     Route::post('/product/add', [ProductController::class, 'postProductAdd'])->name('addproducts');
+    Route::get('/product/{id}/edit', [ProductController::class, 'getProductEdit'])->name('editproducts');
+    Route::post('/product/{id}/edit', [ProductController::class, 'postProductEdit'])->name('editproducts');
 
 
     //Module Categories
