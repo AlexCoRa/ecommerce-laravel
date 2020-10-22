@@ -15,7 +15,7 @@
             </div>
             <div class="inside">
                 <div class="container">
-                    {!! Form::open(['url' => '/admin/product/add']) !!}
+                    {!! Form::open(['url' => '/admin/product/add', 'files'=>true]) !!}
                         <div class="row">
                             <div class="col-md-6">
                                 <label for="name">Nombre del Producto:</label>
@@ -27,12 +27,12 @@
                                 </div>
                             </div>
                             <div class="col-md-3">
-                                <label for="name">Categoría:</label>
+                                <label for="category">Categoría:</label>
                                 <div class="input-group">
                                     <div class="input-group-prepend">
-                                        <div class="input-group-text"><i class="fas fa-archive"></i></div>
+                                        <div class="input-group-text"><i class="fas fa-box-open"></i></div>
                                     </div>
-                                    {!! Form::text('name', null,['class' => 'form-control']) !!}
+                                    {!! Form::select('category', $cats, 0, ['class' => 'custom-select']) !!}
                                 </div>
                             </div>
                             <div class="col-md-3">
@@ -49,7 +49,7 @@
                             <div class="col-md-5">
                                 <label for="img">Imagen:</label>
                                 <div class="custom-file">
-                                    {!! Form::file('img', ['class' => 'custom-file-input', 'id' => 'customFile']) !!}
+                                    {!! Form::file('img', ['class' => 'custom-file-input', 'id' => 'customFile', 'accept' => 'image/*']) !!}
                                     <label class="custom-file-label" for="customFile">Choose file</label>
                                 </div>
                             </div>
