@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Models\Category;
+use App\Models\PGallery;
 use App\Models\Product;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Config;
@@ -86,7 +87,7 @@ class ProductController extends Controller
     }
 
     public function getProductEdit($id) {
-        $p = Product::find($id);
+        $p = Product::findOrFail($id);
         $cats = Category::where('module', '0')->pluck('name', 'id');
         $data = ['cats' => $cats, 'p' => $p];
 
@@ -111,12 +112,12 @@ class ProductController extends Controller
         if ($validator->fails()):
             return back()->withErrors($validator)->with('message','Se ha producido un error')->with('typealert', 'danger')->withInput();
         else:
-            $product = Product::find($id);
+            $product = Product::findOrFail($id);
             $product->status = $request->input('status');
             $product->name = e($request->input('name'));
             $product->category_id = $request->input('category');
             if($request->hasFile('img')):
-                $path = '/'.date('Y-m-d'); //2020-10-21
+                $path = '/'.date('Y-m-d');
                 $fileExt = trim($request->file('img')->getClientOriginalExtension());
                 $upload_path = Config::get('filesystems.disks.uploads.root');
                 $name = str::slug(str_replace($fileExt,'',$request->file('img')->getClientOriginalName()));
@@ -142,6 +143,48 @@ class ProductController extends Controller
                     $img->save($upload_path.'/'.$path.'/t_'.$filename);
                 endif;
                 return redirect('/admin/products')->with('message','El producto '.$product->name.' se he editado con éxito.')->with('typealert', 'success');
+            endif;
+        endif;
+    }
+
+    public function postProductGalleryAdd(Request $request, $id) {
+        $rules = [
+            'file_image' => 'required',
+        ];
+
+        $messages = [
+            'file_image.required' => 'Selecciona una imagen',
+        ];
+
+        $validator = Validator::make($request->all(), $rules, $messages);
+        if ($validator->fails()):
+            return back()->withErrors($validator)->with('message','Se ha producido un error')->with('typealert', 'danger')->withInput();
+        else:
+            if($request->hasFile('file_image')):
+                $path = '/'.date('Y-m-d');
+                $fileExt = trim($request->file('file_image')->getClientOriginalExtension());
+                $upload_path = Config::get('filesystems.disks.uploads.root');
+                $name = str::slug(str_replace($fileExt,'',$request->file('file_image')->getClientOriginalName()));
+
+                $filename = rand(1,999).'-'.$name.'.'.$fileExt;
+                $final_file = $upload_path.'/'.$path.'/'.$filename;
+
+                $g = new PGallery();
+                $g->product_id = $id;
+                $g->file_path = date('Y-m-d');
+                $g->file_name = $filename;
+
+                if($g->save()):
+                    if($request->hasFile('file_image')):
+                        $fl = $request->file_image->storeAs($path, $filename, 'uploads');
+                        $img = Image::make($final_file);
+                        $img->fit(256, 256, function (Constraint $constraint){
+                            $constraint->upsize();
+                        });
+                        $img->save($upload_path.'/'.$path.'/t_'.$filename);
+                    endif;
+                    return redirect('/admin/products')->with('message','La imagen se ha subido con exito.')->with('typealert', 'success');
+                endif;
             endif;
         endif;
     }

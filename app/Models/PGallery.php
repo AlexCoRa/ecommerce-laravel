@@ -6,16 +6,11 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-class Product extends Model
+class PGallery extends Model
 {
     use SoftDeletes;
 
     protected $dates = ['deleted_at'];
-    protected $table = 'products';
+    protected $table = 'product_gallery';
     protected $hidden = ['created_at', 'updated_at'];
-
-
-    public function cat() {
-        return $this->hasOne(Category::class, 'id', 'category_id'); //un producto tiene una categoria
-    }
 }

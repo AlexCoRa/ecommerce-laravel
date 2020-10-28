@@ -110,6 +110,22 @@
                         </div>
                     </div>
                 </div>
+                <div class="panel shadow mt-2">
+                    <div class="header">
+                        <h2 class="title"><i class="fas fa-images"></i> Galeria</h2>
+                    </div>
+                    <div class="inside">
+                        <div class="container product_gallery">
+                            {!! Form::open(['url' => '/admin/product/'.$p->id.'/gallery/add', 'files' => true, 'id' => 'form_product_gallery']) !!}
+                                {!! Form::file('file_image', ['id' => 'product_file_image', 'accept' => 'image/*',
+                                                'style' => 'display:none;', 'required']) !!}
+                            {!! Form::close() !!}
+                            <div class="tumb">
+                                <a href="#" id="btn_product_file_image"><i class="fas fa-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
