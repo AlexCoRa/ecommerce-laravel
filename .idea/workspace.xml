@@ -2,19 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8014a567-7f8f-4f60-9e07-4b74e2f59d3d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Models/PGallery.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_10_27_202753_create_product_gallery_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/uploads/2020-10-27/934-img.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/uploads/2020-10-27/t_934-img.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/ecommerce.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ecommerce.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/2020-10-29/114-img.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/2020-10-29/146-playera-gucci.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/2020-10-29/t_114-img.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/2020-10-29/t_146-playera-gucci.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/ProductController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/PGallery.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/PGallery.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Product.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/static/css/admin.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/static/css/admin.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/static/css/admin.styl" beforeDir="false" afterPath="$PROJECT_DIR$/public/static/css/admin.styl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/static/js/admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/static/js/admin.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/products/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/products/edit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/admin.php" afterDir="false" />
     </list>
@@ -204,7 +201,8 @@
       <workItem from="1603382258463" duration="12478000" />
       <workItem from="1603732252081" duration="1269000" />
       <workItem from="1603734675858" duration="1696000" />
-      <workItem from="1603822766206" duration="8572000" />
+      <workItem from="1603822766206" duration="8697000" />
+      <workItem from="1603909809568" duration="8059000" />
     </task>
     <task id="LOCAL-00001" summary="Ecommerce laravel">
       <created>1602556183998</created>
@@ -269,7 +267,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603399340952</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Products Gallery">
+      <created>1603844776538</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1603844776538</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -284,7 +289,8 @@
     <MESSAGE value="Products and Categories CRUD" />
     <MESSAGE value="Products CRUD" />
     <MESSAGE value="Products CRUD Done" />
-    <option name="LAST_COMMIT_MESSAGE" value="Products CRUD Done" />
+    <MESSAGE value="Products Gallery" />
+    <option name="LAST_COMMIT_MESSAGE" value="Products Gallery" />
   </component>
   <component name="WindowStateProjectService">
     <state x="309" y="47" key="#Inspections" timestamp="1602609671854">
@@ -299,10 +305,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="413" y="124" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.738@0.0.1366.738" timestamp="1603298721493" />
-    <state x="306" y="0" key="CommitChangelistDialog2" timestamp="1603399337629">
+    <state x="306" y="0" key="CommitChangelistDialog2" timestamp="1603844771451">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="306" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1603399337629" />
+    <state x="306" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1603844771451" />
     <state x="350" y="147" key="EditFileWatcherDialog" timestamp="1602608932521">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -335,10 +341,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="184" y="14" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1603384191206" />
-    <state x="275" y="98" key="Vcs.Push.Dialog.v2" timestamp="1603399361049">
+    <state x="275" y="98" key="Vcs.Push.Dialog.v2" timestamp="1603844852175">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="275" y="98" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1603399361049" />
+    <state x="275" y="98" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1603844852175" />
     <state x="500" y="279" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1602556149935">
       <screen x="0" y="0" width="1366" height="738" />
     </state>

@@ -19,7 +19,7 @@ Route::prefix('/admin')->group(function () {
     Route::get('/product/{id}/edit', [ProductController::class, 'getProductEdit'])->name('editproducts');
     Route::post('/product/{id}/edit', [ProductController::class, 'postProductEdit'])->name('editproducts');
     Route::post('/product/{id}/gallery/add', [ProductController::class, 'postProductGalleryAdd'])->name('addproductgallery');
-
+    Route::get('/product/{id}/gallery/{gid}/delete', [ProductController::class, 'getProductGalleryDelete'])->name('deleteproductgallery');
 
     //Module Categories
     Route::get('/categories/{module}', [CategoryController::class, 'getHome'])->name('categories');

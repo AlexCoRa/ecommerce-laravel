@@ -128,29 +128,6 @@ html,body,ul,h2,h3,h4,h5 {
             .table td, .table th {
                 border-top: none !important;
             }
-            .product_gallery {
-                overflow: hidden;
-                .tumb {
-                    float: left;
-                    display: block;
-                    width: 100%;
-                    a {
-                        border: 1px dashed #666;
-                        border-radius: 4px;
-                        color: #333 !important;
-                        display: block;
-                        text-align: center;
-                        font-size: 2em;
-                        width: 100%;
-                        padding: 40px 0px;
-                        transition: all 200ms;
-                        &:hover {
-                            background-color: #333;
-                            color: white !important;
-                        }
-                    }
-                }
-            }
         }
         .link-a {
             color: #6B6B6B;
@@ -163,4 +140,58 @@ html,body,ul,h2,h3,h4,h5 {
         }
     }
 
+}
+
+.product_gallery {
+    overflow: hidden;
+    .btn-submit {
+        display: block;
+        width: 100%;
+        a {
+            border: 1px dashed #666;
+            border-radius: 4px;
+            color: #333 !important;
+            display: block;
+            text-align: center;
+            font-size: 1.5em;
+            width: 100%;
+            padding: 12px;
+            transition: all 200ms;
+            &:hover {
+                background-color: #333;
+                color: white !important;
+            }
+        }
+    }
+    .tumbs {
+        overflow: hidden;
+        margin-top: 5px;
+        .tumb {
+            float: left;
+            position: relative;
+            width: 48%;
+            a {
+                display: inline-block;
+                position: absolute;
+                bottom: 4px;
+                right: 18px;
+                background-color: rgba(255, 255, 255, 0.5);
+                color: #444;
+                padding: 6px;
+                border-radius: 5px;
+                transition: all 200ms;
+
+                &:hover {
+                    background-color: #444;
+                    color: white;
+                }
+            }
+            img {
+                border-radius: 4px;
+                width: 100%;
+                margin-right: 10px;
+                margin-top: 10px;
+            }
+        }
+    }
 }

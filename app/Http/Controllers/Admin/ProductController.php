@@ -183,8 +183,23 @@ class ProductController extends Controller
                         });
                         $img->save($upload_path.'/'.$path.'/t_'.$filename);
                     endif;
-                    return redirect('/admin/products')->with('message','La imagen se ha subido con exito.')->with('typealert', 'success');
+                    return back()->with('message','La imagen se ha subido con exito.')->with('typealert', 'success');
                 endif;
+            endif;
+        endif;
+    }
+
+    public function getProductGalleryDelete($id, $gid) {
+        $g = PGallery::findOrFail($gid);
+        $path = $g->file_path;
+        $file = $g->file_name;
+        $upload_path = Config::get('filesystems.disks.uploads.root');
+
+        if($g->product_id != $id):
+            return back()->with('message','La imagen no se puede eliminar')->with('typealert', 'danger');
+        else:
+            if($g->delete()):
+                return back()->with('message','La imagen ha sido borrada con exito.')->with('typealert', 'success');
             endif;
         endif;
     }

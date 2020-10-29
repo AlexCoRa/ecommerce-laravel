@@ -120,8 +120,16 @@
                                 {!! Form::file('file_image', ['id' => 'product_file_image', 'accept' => 'image/*',
                                                 'style' => 'display:none;', 'required']) !!}
                             {!! Form::close() !!}
-                            <div class="tumb">
+                            <div class="btn-submit">
                                 <a href="#" id="btn_product_file_image"><i class="fas fa-plus"></i></a>
+                            </div>
+                            <div class="tumbs">
+                                @foreach($p->getGallery as $img)
+                                    <div class="tumb">
+                                        <a href="{{ url('/admin/product/'.$p->id.'/gallery/'.$img->id.'/delete') }}" data-toggle="tooltip" data-placement="top" title="Eliminar"><i class="fas fa-trash-alt"></i></a>
+                                        <img src="{{ url('/uploads/'.$img->file_path.'/t_'.$img->file_name) }}" alt="">
+                                    </div>
+                                @endforeach
                             </div>
                         </div>
                     </div>
