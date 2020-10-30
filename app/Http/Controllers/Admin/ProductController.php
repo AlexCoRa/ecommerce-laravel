@@ -113,6 +113,8 @@ class ProductController extends Controller
             return back()->withErrors($validator)->with('message','Se ha producido un error')->with('typealert', 'danger')->withInput();
         else:
             $product = Product::findOrFail($id);
+            $ipp = $product->file_path;
+            $ip = $product->image;
             $product->status = $request->input('status');
             $product->name = e($request->input('name'));
             $product->category_id = $request->input('category');
@@ -141,6 +143,8 @@ class ProductController extends Controller
                         $constraint->upsize();
                     });
                     $img->save($upload_path.'/'.$path.'/t_'.$filename);
+                    unlink($upload_path.'/'.$ipp.'/'.$ip);
+                    unlink($upload_path.'/'.$ipp.'/t_'.$ip);
                 endif;
                 return redirect('/admin/products')->with('message','El producto '.$product->name.' se he editado con éxito.')->with('typealert', 'success');
             endif;

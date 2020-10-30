@@ -30,10 +30,10 @@
                         </thead>
                         <tbody>
                         @foreach($products as $p)
-                            <tr>
+                            <tr @if($p->status == "0") class="table-danger" @endif >
                                 <th scope="row">{{ $p->id }}</th>
-                                <td><a href="{{ url('/uploads/'.$p->file_path.'/'.$p->image) }}" data-fancybox="gallery"><img src="{{ url('/uploads/'.$p->file_path.'/'.$p->image) }}" style="width: 40%;" ></a></td>
-                                <td>{{ $p->name }}</td>
+                                <td><a href="{{ url('/uploads/'.$p->file_path.'/'.$p->image) }}" data-fancybox="gallery"><img src="{{ url('/uploads/'.$p->file_path.'/t_'.$p->image) }}" style="width: 40%" ></a></td>
+                                <td style="margin-left: 200px !important;">{{ $p->name }}</td>
                                 <td>{{ $p->cat->name }}</td>
                                 <td>${{ $p->price }}</td>
                                 <td>
@@ -46,6 +46,11 @@
                             </tr>
                         @endforeach
                         </tbody>
+                        <tr>
+                            <td colspan="6">{!! $products->render() !!}</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
                     </table>
                 </div>
             </div>

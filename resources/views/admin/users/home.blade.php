@@ -23,7 +23,6 @@
                         <th scope="col">Email</th>
                         <th scope="col"></th>
                         <th scope="col"></th>
-                        <th scope="col"></th>
                     </tr>
                     </thead>
                     <tbody>
@@ -34,10 +33,7 @@
                             <td>{{ $user->lastname }}</td>
                             <td>{{ $user->email }}</td>
                             <td>
-                                <a href="{{ url('/admin/user/'.$user->id.'/edit') }}" data-toggle="tooltip" data-placement="top" title="Editar"><i class="fas fa-edit"></i></a>
-                            </td>
-                            <td>
-                                <a href="{{ url('/admin/user/'.$user->id.'/delete') }}" data-toggle="tooltip" data-placement="top" title="Eliminar"><i class="fas fa-trash-alt"></i></a>
+                                <a href="{{ url('/admin/user/'.$user->id.'/edit') }}" data-toggle="tooltip" data-placement="top" title="Ver Usuario"><i class="fas fa-edit"></i></a>
                             </td>
                             <td></td>
                         </tr>
