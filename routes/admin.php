@@ -12,8 +12,9 @@ Route::prefix('/admin')->group(function () {
     Route::get('/', [DashboardController::class, 'getDashboard'])->name('dashboard');
 
     //Module Users
-    Route::get('/users', [UserController::class, 'getUsers'])->name('users_list');
+    Route::get('/users/{status}', [UserController::class, 'getUsers'])->name('users_list');
     Route::get('/user/{id}/edit', [UserController::class, 'getUsersEdit'])->name('users_edit');
+
 
     //Module Products
     Route::get('/products', [ProductController::class, 'getHome'])->name('products');
