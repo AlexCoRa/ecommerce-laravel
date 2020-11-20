@@ -31,4 +31,18 @@ class UserController extends Controller
         return view('admin.users.user_edit', $data);
     }
 
+    public function getUserBanned($id) {
+        $u = User::findOrFail($id);
+        if($u->status == 100):
+            $u->status = "1";
+            $msg = "El Usuario ".$u->name." se ha activo nuevamente.";
+        else:
+            $u->status = "100";
+            $msg = "El Usuario ".$u->name." se ha suspendido con exito.";
+        endif;
+        if($u->save()):
+            return back()->with('message',$msg)->with('typealert', 'success');
+        endif;
+    }
+
 }

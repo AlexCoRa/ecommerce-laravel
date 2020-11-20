@@ -29,12 +29,17 @@
                                         <span class="title"><i class="far fa-envelope"></i> Correo Electrónico: </span>
                                         <span class="text">{{ $u->email }}</span>
                                         <span class="title"><i class="fas fa-user-check"></i> Estado del Usuario: </span>
-                                        <span class="text">{{ getUserStatusArrayKey($u->status) }}</span>
+                                        <span class="text">{{ getUserStatusArray(null, $u->status) }}</span>
                                         <span class="title"><i class="far fa-calendar-alt"></i> Fecha de Registro: </span>
                                         <span class="text">{{ $u->created_at }}</span>
                                         <span class="title"><i class="fas fa-user-shield"></i> Role del Usuario: </span>
-                                        <span class="text">{{ getUserRoleArrayKey($u->role) }}</span>
+                                        <span class="text">{{ getUserRoleArray(null, $u->role) }}</span>
                                     </div>
+                                        @if($u->status == "100")
+                                            <a href="{{ url('/admin/user/'.$u->id.'/banned') }}" class="btn btn-sm btn-success">Activar Usuario</a>
+                                        @else
+                                            <a href="{{ url('/admin/user/'.$u->id.'/banned') }}" class="btn btn-sm btn-danger">Suspender Usuario</a>
+                                        @endif
                                 </div>
                             </div>
                         </div>

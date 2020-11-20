@@ -49,8 +49,8 @@
                             <td>{{ $user->name }}</td>
                             <td>{{ $user->lastname }}</td>
                             <td>{{ $user->email }}</td>
-                            <td>{{ getUserRoleArrayKey($user->role) }}</td>
-                            <td>{{ getUserStatusArrayKey($user->status) }}</td>
+                            <td>{{ getUserRoleArray(null, $user->role) }}</td>
+                            <td>{{ getUserStatusArray(null, $user->status) }}</td>
                             <td>
                                 <a href="{{ url('/admin/user/'.$user->id.'/edit') }}" data-toggle="tooltip" data-placement="top" title="Ver Usuario"><i class="fas fa-edit"></i></a>
                             </td>

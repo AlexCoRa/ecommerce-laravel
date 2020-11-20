@@ -14,6 +14,7 @@ Route::prefix('/admin')->group(function () {
     //Module Users
     Route::get('/users/{status}', [UserController::class, 'getUsers'])->name('users_list');
     Route::get('/user/{id}/edit', [UserController::class, 'getUsersEdit'])->name('users_edit');
+    Route::get('/user/{id}/banned', [UserController::class, 'getUserBanned'])->name('user_banned');
 
 
     //Module Products

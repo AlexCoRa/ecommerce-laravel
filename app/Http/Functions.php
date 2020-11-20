@@ -8,21 +8,31 @@ function getModulesArray() {
     return $a;
 }
 
-function getUserRoleArrayKey($id) {
+function getUserRoleArray($mode, $id) {
     $roles = [
         '0' => 'Usuario',
         '1' => 'Administrador'
     ];
-    return $roles[$id];
+    if(!is_null($mode)):
+        return $roles;
+    else:
+        return $roles[$id];
+    endif;
 }
 
-function getUserStatusArrayKey($id) {
+function getUserStatusArray($mode, $id) {
     $status = [
         '0' => 'Registrado',
         '1' => 'Verifícado',
         '100' => 'Baneado'
     ];
-    return $status[$id];
+    if (!is_null($mode)):
+        return $status;
+    else:
+        return $status[$id];
+    endif;
 }
+
+
 
 
