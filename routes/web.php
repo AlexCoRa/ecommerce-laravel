@@ -20,6 +20,8 @@ Route::get('/', function () {
 
 //Router Auth
 Route::get('/login', [ConnectController::class, 'getLogin'])->name('login');
+Route::get('/recover', [ConnectController::class, 'getRecover'])->name('recover');
+Route::post('/recover', [ConnectController::class, 'postRecover'])->name('recover');
 Route::post('/login', [ConnectController::class, 'postLogin'])->name('login');
 Route::get('/logout', [ConnectController::class, 'logout'])->name('logout');
 
