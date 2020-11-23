@@ -2,18 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8014a567-7f8f-4f60-9e07-4b74e2f59d3d" name="Default Changelist" comment="User Information Layout">
-      <change afterPath="$PROJECT_DIR$/app/Http/Middleware/UserStatus.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/images/email_logo.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/connect/recover.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/emails/master.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/emails/user_password_recover.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Mail/UserSendNewPassword.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Mail/UserSendRecover.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_11_23_192845_add_password_code_to_users_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/connect/reset.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/emails/user_send_new_password.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/CategoryController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/DashboardController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/DashboardController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/ProductController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/UserController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ConnectController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ConnectController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -157,7 +152,7 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/connect" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/emails" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -166,6 +161,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\laragon\www\ecommerce\resources\views\emails" />
       <recent name="C:\laragon\www\ecommerce\resources\views\connect" />
       <recent name="C:\laragon\www\ecommerce\resources\views\admin\products" />
       <recent name="C:\laragon\www\ecommerce\resources\views\admin\categories" />
@@ -208,7 +204,9 @@
       <workItem from="1604001347004" duration="10445000" />
       <workItem from="1604091546743" duration="188000" />
       <workItem from="1605890789831" duration="6146000" />
-      <workItem from="1606000498515" duration="6123000" />
+      <workItem from="1606000498515" duration="6542000" />
+      <workItem from="1606149495931" duration="6225000" />
+      <workItem from="1606165668680" duration="3471000" />
     </task>
     <task id="LOCAL-00001" summary="Ecommerce laravel">
       <created>1602556183998</created>
