@@ -5,7 +5,7 @@
         </div>
         <div class="inside">
             <div class="form-check">
-                <input type="checkbox" value="true" name="dashboard">
+                <input type="checkbox" value="true" name="dashboard" @if(kvfj($u->permissions, 'dashboard')) checked @endif >
                 <label for="dashboard">Puede ver el dashboard.</label>
             </div>
         </div>

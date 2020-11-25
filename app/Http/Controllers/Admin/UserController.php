@@ -56,7 +56,11 @@ class UserController extends Controller
         $u = User::findOrFail($id);
         $permissions = [
             'dashboard' => $request->input('dashboard'),
-            'products' => $request->input('products')
+            'products' => $request->input('products'),
+            'products_add' => $request->input('products_add'),
+            'products__edit' => $request->input('products__edit'),
+            'product_gallery_add' => $request->input('product_gallery_add'),
+            'product_gallery_delete' => $request->input('product_gallery_delete')
         ];
         $permissions = json_encode($permissions);
         $u->permissions = $permissions;

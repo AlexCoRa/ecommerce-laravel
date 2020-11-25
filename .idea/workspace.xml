@@ -2,16 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8014a567-7f8f-4f60-9e07-4b74e2f59d3d" name="Default Changelist" comment="User Information Layout">
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_11_24_233728_add_field_permissions_to_users_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/users/permissions/module_categories.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/users/permissions/module_dashboard.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/users/permissions/module_products.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/users/permissions/module_users.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/users/user_permissions.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/users/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/users/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/users/permissions/module_dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/users/permissions/module_dashboard.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/users/permissions/module_products.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/users/permissions/module_products.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -210,7 +205,8 @@
       <workItem from="1606000498515" duration="6542000" />
       <workItem from="1606149495931" duration="6225000" />
       <workItem from="1606165668680" duration="3888000" />
-      <workItem from="1606255175723" duration="5386000" />
+      <workItem from="1606255175723" duration="5706000" />
+      <workItem from="1606325286371" duration="3058000" />
     </task>
     <task id="LOCAL-00001" summary="Ecommerce laravel">
       <created>1602556183998</created>
