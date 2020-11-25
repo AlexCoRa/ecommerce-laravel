@@ -15,7 +15,8 @@ Route::prefix('/admin')->group(function () {
     Route::get('/users/{status}', [UserController::class, 'getUsers'])->name('users_list');
     Route::get('/user/{id}/edit', [UserController::class, 'getUsersEdit'])->name('users_edit');
     Route::get('/user/{id}/banned', [UserController::class, 'getUserBanned'])->name('user_banned');
-
+    Route::get('/user/{id}/permissions', [UserController::class, 'getUserPermissions'])->name('user_permission');
+    Route::post('/user/{id}/permissions', [UserController::class, 'postUserPermissions'])->name('user_permission');
 
     //Module Products
     Route::get('/products', [ProductController::class, 'getHome'])->name('products');

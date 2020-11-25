@@ -46,4 +46,23 @@ class UserController extends Controller
         endif;
     }
 
+    public function getUserPermissions($id) {
+        $u = User::findOrFail($id);
+        $data = ['u' => $u];
+        return view('admin.users.user_permissions', $data);
+    }
+
+    public function postUserPermissions(Request $request, $id) {
+        $u = User::findOrFail($id);
+        $permissions = [
+            'dashboard' => $request->input('dashboard'),
+            'products' => $request->input('products')
+        ];
+        $permissions = json_encode($permissions);
+        $u->permissions = $permissions;
+        if ($u->save()):
+            return back()->with('message','Los permisos del usuario fueron actualizados con éxito.')->with('typealert', 'success');
+        endif;
+    }
+
 }

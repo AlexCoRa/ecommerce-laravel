@@ -54,6 +54,9 @@
                             <td>
                                 <a href="{{ url('/admin/user/'.$user->id.'/edit') }}" data-toggle="tooltip" data-placement="top" title="Ver Usuario"><i class="fas fa-edit"></i></a>
                             </td>
+                            <td>
+                                <a href="{{ url('/admin/user/'.$user->id.'/permissions') }}" data-toggle="tooltip" data-placement="top" title="Permisos de Usuario"><i class="fas fa-cogs"></i></a>
+                            </td>
                             <td></td>
                         </tr>
                         @endforeach
