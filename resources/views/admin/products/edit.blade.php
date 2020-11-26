@@ -83,6 +83,26 @@
                                     </div>
                                 </div>
                                 <div class="row mt-3">
+                                    <div class="col-md-4">
+                                        <label for="inventory">Inventario:</label>
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <div class="input-group-text"><i class="fas fa-dolly-flatbed"></i></div>
+                                            </div>
+                                            {!! Form::number('inventory', $p->inventory, ['class' => 'form-control', 'min' => '0.00']) !!}
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label for="code">Código de Sistema:</label>
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <div class="input-group-text"><i class="fas fa-qrcode"></i></div>
+                                            </div>
+                                            {!! Form::text('code', $p->code,['class' => 'form-control']) !!}
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mt-3">
                                     <div class="col-md-12">
                                         <label for="content">Descripción:</label>
                                         {!! Form::textarea('content', $p->content, ['class' => 'form-control', 'id'=>'editor']) !!}
@@ -116,17 +136,21 @@
                     </div>
                     <div class="inside">
                         <div class="container product_gallery">
-                            {!! Form::open(['url' => '/admin/product/'.$p->id.'/gallery/add', 'files' => true, 'id' => 'form_product_gallery']) !!}
+                            @if(kvfj(\Illuminate\Support\Facades\Auth::user()->permissions, 'product_gallery_add'))
+                                {!! Form::open(['url' => '/admin/product/'.$p->id.'/gallery/add', 'files' => true, 'id' => 'form_product_gallery']) !!}
                                 {!! Form::file('file_image', ['id' => 'product_file_image', 'accept' => 'image/*',
-                                                'style' => 'display:none;', 'required']) !!}
-                            {!! Form::close() !!}
-                            <div class="btn-submit">
-                                <a href="#" id="btn_product_file_image"><i class="fas fa-plus"></i></a>
-                            </div>
+                                                    'style' => 'display:none;', 'required']) !!}
+                                {!! Form::close() !!}
+                                <div class="btn-submit">
+                                    <a href="#" id="btn_product_file_image"><i class="fas fa-plus"></i></a>
+                                </div>
+                            @endif
                             <div class="tumbs">
                                 @foreach($p->getGallery as $img)
                                     <div class="tumb">
-                                        <a href="{{ url('/admin/product/'.$p->id.'/gallery/'.$img->id.'/delete') }}" data-toggle="tooltip" data-placement="top" title="Eliminar"><i class="fas fa-trash-alt"></i></a>
+                                        @if(kvfj(\Illuminate\Support\Facades\Auth::user()->permissions, 'product_gallery_add'))
+                                            <a href="{{ url('/admin/product/'.$p->id.'/gallery/'.$img->id.'/delete') }}" data-toggle="tooltip" data-placement="top" title="Eliminar"><i class="fas fa-trash-alt"></i></a>
+                                        @endif
                                         <img src="{{ url('/uploads/'.$img->file_path.'/t_'.$img->file_name) }}" alt="">
                                     </div>
                                 @endforeach

@@ -35,10 +35,12 @@
                                         <span class="title"><i class="fas fa-user-shield"></i> Role del Usuario: </span>
                                         <span class="text">{{ getUserRoleArray(null, $u->role) }}</span>
                                     </div>
-                                        @if($u->status == "100")
-                                            <a href="{{ url('/admin/user/'.$u->id.'/banned') }}" class="btn btn-sm btn-success">Activar Usuario</a>
-                                        @else
-                                            <a href="{{ url('/admin/user/'.$u->id.'/banned') }}" class="btn btn-sm btn-danger">Suspender Usuario</a>
+                                        @if(kvfj(\Illuminate\Support\Facades\Auth::user()->permissions, 'user_banned'))
+                                            @if($u->status == "100")
+                                                <a href="{{ url('/admin/user/'.$u->id.'/banned') }}" class="btn btn-sm btn-success">Activar Usuario</a>
+                                            @else
+                                                <a href="{{ url('/admin/user/'.$u->id.'/banned') }}" class="btn btn-sm btn-danger">Suspender Usuario</a>
+                                            @endif
                                         @endif
                                 </div>
                             </div>

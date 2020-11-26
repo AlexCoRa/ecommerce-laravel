@@ -52,10 +52,14 @@
                             <td>{{ getUserRoleArray(null, $user->role) }}</td>
                             <td>{{ getUserStatusArray(null, $user->status) }}</td>
                             <td>
+                                @if(kvfj(\Illuminate\Support\Facades\Auth::user()->permissions, 'users_edit'))
                                 <a href="{{ url('/admin/user/'.$user->id.'/edit') }}" data-toggle="tooltip" data-placement="top" title="Ver Usuario"><i class="fas fa-edit"></i></a>
+                                @endif
                             </td>
                             <td>
-                                <a href="{{ url('/admin/user/'.$user->id.'/permissions') }}" data-toggle="tooltip" data-placement="top" title="Permisos de Usuario"><i class="fas fa-cogs"></i></a>
+                                @if(kvfj(\Illuminate\Support\Facades\Auth::user()->permissions, 'user_permission'))
+                                    <a href="{{ url('/admin/user/'.$user->id.'/permissions') }}" data-toggle="tooltip" data-placement="top" title="Permisos de Usuario"><i class="fas fa-cogs"></i></a>
+                                @endif
                             </td>
                             <td></td>
                         </tr>

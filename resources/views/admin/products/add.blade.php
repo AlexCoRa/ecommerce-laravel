@@ -4,7 +4,7 @@
 
 @section('breadcrumb')
     <li class="breadcrumb-item"><a href="{{ url('/admin/products') }}"><i class="fas fa-boxes"></i> Productos</a></li>
-    <li class="breadcrumb-item"><a href="{{ url('/admin/product/add') }}"><i class="fas fa-plus"></i>Agregar Producto</a></li>
+    <li class="breadcrumb-item"><a href="{{ url('/admin/product/add') }}"><i class="fas fa-plus"></i> Agregar Producto</a></li>
 @endsection
 
 @section('content')
@@ -17,7 +17,7 @@
                 <div class="container">
                     {!! Form::open(['url' => '/admin/product/add', 'files'=>true]) !!}
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-md-4">
                                 <label for="name">Nombre del Producto:</label>
                                 <div class="input-group">
                                     <div class="input-group-prepend">
@@ -44,9 +44,18 @@
                                     {!! Form::number('price', null,['class' => 'form-control', 'min' => '0.00', 'step' => 'any']) !!}
                                 </div>
                             </div>
+                            <div class="col-md-2">
+                                <label for="inventory">Inventario:</label>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text"><i class="fas fa-dolly-flatbed"></i></div>
+                                    </div>
+                                    {!! Form::number('inventory', 0, ['class' => 'form-control', 'min' => '0.00']) !!}
+                                </div>
+                            </div>
                         </div>
                         <div class="row mt-3">
-                            <div class="col-md-5">
+                            <div class="col-md-3">
                                 <label for="img">Imagen:</label>
                                 <div class="custom-file">
                                     {!! Form::file('img', ['class' => 'custom-file-input', 'id' => 'customFile', 'accept' => 'image/*']) !!}
@@ -62,13 +71,22 @@
                                    {!! Form::select('indiscount', ['0' => 'No', '1' => 'Si'], 0, ['class' => 'custom-select']) !!}
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-3">
                                 <label for="discount">Descuento:</label>
                                 <div class="input-group">
                                     <div class="input-group-prepend">
                                         <div class="input-group-text"><i class="fas fa-percentage"></i></div>
                                     </div>
                                     {!! Form::number('discount', 0.00,['class' => 'form-control', 'min' => '0.00', 'step' => 'any']) !!}
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <label for="code">Código de Sistema:</label>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text"><i class="fas fa-qrcode"></i></div>
+                                    </div>
+                                    {!! Form::text('code', 0,['class' => 'form-control']) !!}
                                 </div>
                             </div>
                         </div>

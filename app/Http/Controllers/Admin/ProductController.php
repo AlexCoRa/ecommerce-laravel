@@ -18,11 +18,25 @@ class ProductController extends Controller
     public function __construct(){
         $this->middleware('auth');
         $this->middleware('user.status');
+        $this->middleware('user.permissions');
         $this->middleware('isadmin');
     }
 
-    public function getHome() {
-        $products = Product::with(['cat'])->orderBy('id', 'Desc')->paginate(25);
+    public function getHome($status) {
+        switch ($status) {
+            case '0':
+                $products = Product::with(['cat'])->where('status', '0')->orderBy('id', 'desc')->paginate(25);
+            break;
+            case '1':
+                $products = Product::with(['cat'])->where('status', '1')->orderBy('id', 'desc')->paginate(25);
+            break;
+            case 'all':
+                $products = Product::with(['cat'])->orderBy('id', 'desc')->paginate(25);
+            break;
+            case 'trash':
+                $products = Product::with(['cat'])->onlyTrashed()->orderBy('id', 'desc')->paginate(25);
+            break;
+        }
         $data = ['products' => $products];
         return view('/admin/products/home', $data);
     }
@@ -63,12 +77,14 @@ class ProductController extends Controller
 
             $product = new Product();
             $product->status = '0';
+            $product->code = e($request->input('code'));
             $product->name = e($request->input('name'));
             $product->slug = Str::slug($request->input('name'));
             $product->category_id = $request->input('category');
             $product->file_path = date('Y-m-d');
             $product->image = $filename;
             $product->price = $request->input('price');
+            $product->inventory = e($request->input('inventory'));
             $product->in_discount = $request->input('indiscount');
             $product->discount = $request->input('discount');
             $product->content = e($request->input('content'));
@@ -82,7 +98,7 @@ class ProductController extends Controller
                     });
                     $img->save($upload_path.'/'.$path.'/t_'.$filename);
                 endif;
-                return redirect('/admin/products')->with('message','El producto '.$product->name.' se guardó con éxito.')->with('typealert', 'success');
+                return redirect('/admin/products/all')->with('message','El producto '.$product->name.' se guardó con éxito.')->with('typealert', 'success');
             endif;
         endif;
     }
@@ -117,6 +133,7 @@ class ProductController extends Controller
             $ipp = $product->file_path;
             $ip = $product->image;
             $product->status = $request->input('status');
+            $product->code = e($request->input('code'));
             $product->name = e($request->input('name'));
             $product->category_id = $request->input('category');
             if($request->hasFile('img')):
@@ -132,6 +149,7 @@ class ProductController extends Controller
                 $product->image = $filename;
             endif;
             $product->price = $request->input('price');
+            $product->inventory = e($request->input('inventory'));
             $product->in_discount = $request->input('indiscount');
             $product->discount = $request->input('discount');
             $product->content = e($request->input('content'));
@@ -147,7 +165,7 @@ class ProductController extends Controller
                     unlink($upload_path.'/'.$ipp.'/'.$ip);
                     unlink($upload_path.'/'.$ipp.'/t_'.$ip);
                 endif;
-                return redirect('/admin/products')->with('message','El producto '.$product->name.' se he editado con éxito.')->with('typealert', 'success');
+                return redirect('/admin/products/all')->with('message','El producto '.$product->name.' se he editado con éxito.')->with('typealert', 'success');
             endif;
         endif;
     }

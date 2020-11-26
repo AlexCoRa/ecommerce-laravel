@@ -1,4 +1,4 @@
-<div class="col-md-4">
+<div class="col-md-4 d-flex">
     <div class="panel shadow">
         <div class="header">
             <h2 class="title"><i class="fas fa-boxes"></i> Modulo Productos</h2>
@@ -16,8 +16,13 @@
                 </div>
 
                 <div class="form-check">
-                    <input type="checkbox" value="true" name="products__edit" @if(kvfj($u->permissions, 'products__edit')) checked @endif>
-                    <label for="products__edit">Puede editar productos.</label>
+                    <input type="checkbox" value="true" name="products_edit" @if(kvfj($u->permissions, 'products_edit')) checked @endif>
+                    <label for="products_edit">Puede editar productos.</label>
+                </div>
+
+                <div class="form-check">
+                    <input type="checkbox" value="true" name="products_delete" @if(kvfj($u->permissions, 'products_delete')) checked @endif>
+                    <label for="products_delete">Puede eliminar productos.</label>
                 </div>
 
                 <div class="form-check">
