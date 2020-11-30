@@ -33,6 +33,33 @@ class UserController extends Controller
         return view('admin.users.user_edit', $data);
     }
 
+    public function postUsersEdit(Request $request, $id) {
+        $u = User::findOrFail($id);
+        $u->role = $request->input('user_type');
+        if($request->input('user_type') == "1"):
+            if(is_null($u->permissions)):
+                $permissions = [
+                    'dashboard' => true
+                ];
+                $permissions = json_encode($permissions);
+                $u->permissions = $permissions;
+            endif;
+        else:
+            $u->permissions = null;
+        endif;
+        if($u->save()):
+            if($request->input('user_type') == "1"):
+                return redirect('/admin/user/'.$u->id.'/permissions')
+                    ->with('message', 'El rango del usuario se actualizó con éxito.')
+                    ->with('typealert', 'success');
+            else:
+                return back()
+                    ->with('message', 'El rango del usuario se actualizó con éxito.')
+                    ->with('typealert', 'success');
+            endif;
+        endif;
+    }
+
     public function getUserBanned($id) {
         $u = User::findOrFail($id);
         if($u->status == 100):
@@ -59,6 +86,7 @@ class UserController extends Controller
             'dashboard' => $request->input('dashboard'),
             'products' => $request->input('products'),
             'products_add' => $request->input('products_add'),
+            'product_search' => $request->input('product_search'),
             'products_edit' => $request->input('products_edit'),
             'products_delete' => $request->input('products_delete'),
             'product_gallery_add' => $request->input('product_gallery_add'),
@@ -78,5 +106,4 @@ class UserController extends Controller
             return back()->with('message','Los permisos del usuario fueron actualizados con éxito.')->with('typealert', 'success');
         endif;
     }
-
 }

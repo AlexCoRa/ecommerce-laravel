@@ -120,6 +120,7 @@ html,body,ul,h2,h3,h4,h5 {
                 display: inline-block;
                 float: right;
                 margin-right: 30px;
+                z-index: 999;
                 li {
                     display: inline-block;
                     position: relative;
@@ -165,6 +166,13 @@ html,body,ul,h2,h3,h4,h5 {
             }
             .table td, .table th {
                 border-top: none !important;
+            }
+            .form_search {
+                display: none;
+                margin-bottom: 16px;
+                .btn {
+                    width: 100%;
+                }
             }
         }
         .link-a {

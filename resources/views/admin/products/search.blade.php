@@ -80,27 +80,7 @@
                                 </td>
                                 <td>
                                     @if(kvfj(\Illuminate\Support\Facades\Auth::user()->permissions, 'products_delete'))
-                                        @if(is_null($p->deleted_at))
-                                            <a href="#"
-                                               class="btn_deleted"
-                                               data-action="delete"
-                                               data-path="admin/product"
-                                               data-object="{{ $p->id }}"
-                                               data-toggle="tooltip"
-                                               data-placement="top" title="Eliminar">
-                                                <i class="fas fa-trash-alt"></i>
-                                            </a>
-                                        @else
-                                            <a href="{{ url('/admin/product/'. $p->id.'/restore') }}"
-                                               class="btn_deleted"
-                                               data-action="restore"
-                                               data-path="admin/product"
-                                               data-object="{{ $p->id }}"
-                                               data-toggle="tooltip"
-                                               data-placement="top" title="Restaurar">
-                                                <i class="fas fa-trash-restore"></i>
-                                            </a>
-                                        @endif
+                                        <a href="{{ url('/admin/product/'.$p->id.'/delete') }}" data-toggle="tooltip" data-placement="top" title="Eliminar"><i class="fas fa-trash-alt"></i></a>
                                     @endif
                                 </td>
                                 <td></td>

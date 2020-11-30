@@ -226,4 +226,49 @@ class ProductController extends Controller
             endif;
         endif;
     }
+
+    public function postProductSearch (Request $request) {
+        $rules = [
+            'search' => 'required',
+        ];
+
+        $messages = [
+            'search.required' => 'El campo buscar es requerido',
+        ];
+
+        $validator = Validator::make($request->all(), $rules, $messages);
+        if ($validator->fails()):
+            return back()->withErrors($validator)->with('message','Se ha producido un error')->with('typealert', 'danger')->withInput();
+        else:
+            switch ($request->input('filter')):
+                case '0':
+                    $products = Product::with(['cat'])->where('name', 'LIKE', '%'.$request
+                            ->input('search').'%')->where('status', $request->input('status'))
+                            ->orderBy('id', 'desc')
+                            ->get();
+                break;
+                case '1':
+                    $products = Product::with(['cat'])->where('code',$request
+                            ->input('search'))->orderBy('id', 'desc')->get();
+                break;
+            endswitch;
+            $data = ['products' => $products];
+            return view('admin.products.search', $data);
+        endif;
+    }
+
+    public function getProductDelete($id) {
+        $p = Product::findOrfail($id);
+        if($p->delete()):
+            return back()->with('message','El Producto '.$p->name. ' se eliminó con exito.')->with('typealert', 'success');
+        endif;
+    }
+
+    public function getProductRestore($id) {
+        $p = Product::onlyTrashed()->where('id', $id)->first();
+        $p->restore();
+        if($p->restore()):
+            return redirect('/admin/product/'.$p->id.'/edit')->with('message','El Producto '.$p->name. ' se restauró con éxito.')->with('typealert', 'success');
+        endif;
+    }
 }

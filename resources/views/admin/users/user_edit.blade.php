@@ -47,18 +47,37 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-8">
-                    <div class="panel shadow">
-                        <div class="header">
-                            <h2 class="title"><i class="fas fa-user-edit"></i> Editar Información</h2>
-                        </div>
-                        <div class="inside">
-                            <div class="container">
-
+                @if(kvfj(\Illuminate\Support\Facades\Auth::user()->permissions, 'users_edit'))
+                    <div class="col-md-8">
+                        <div class="panel shadow">
+                            <div class="header">
+                                <h2 class="title"><i class="fas fa-user-edit"></i> Editar Información</h2>
+                            </div>
+                            <div class="inside">
+                                <div class="container">
+                                    {!! Form::open(['url' => '/admin/user/'.$u->id.'/edit']) !!}
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <label for="module">Tipo de Usuario:</label>
+                                                <div class="input-group">
+                                                    <div class="input-group-prepend">
+                                                        <div class="input-group-text"><i class="fas fa-box-open"></i></div>
+                                                    </div>
+                                                    {!! Form::select('user_type', getUserRoleArray('list', null), $u->role, ['class' => 'custom-select']) !!}
+                                                </div>
+                                            </div>
+                                        </div>
+                                    <div class="row mt-3">
+                                        <div class="col-md-12">
+                                            {!! Form::submit('Guardar', ['class' => 'btn btn-success']) !!}
+                                        </div>
+                                    </div>
+                                    {!! Form::close() !!}
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                @endif
             </div>
         </div>
     </div>
