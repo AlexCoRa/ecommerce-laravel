@@ -39,7 +39,7 @@
         });
     </script>
 
-    <title>Gentleman - @yield('title')</title>
+    <title>@yield('title') - Gentleman</title>
 </head>
 <body>
 <div class="wrapper">
@@ -49,7 +49,7 @@
             <div class="collapse navbar-collapse">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a href="{{ '/admin' }}" class="nav-link"><i class="fas fa-home"></i> Dashboard</a>
+                        <a href="{{ '/admin' }}" class="nav-link" style="padding-left: 1.6rem"><i class="fas fa-home"></i> Dashboard</a>
                     </li>
                 </ul>
             </div>

@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ConnectController;
+use App\Http\Controllers\ContentController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -14,9 +16,7 @@ use App\Http\Controllers\ConnectController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [ContentController::class, 'getHome'])->name('home');
 
 //Router Auth
 Route::get('/login', [ConnectController::class, 'getLogin'])->name('login');

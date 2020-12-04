@@ -60,10 +60,8 @@
                                             <div class="col-md-6">
                                                 <label for="module">Tipo de Usuario:</label>
                                                 <div class="input-group">
-                                                    <div class="input-group-prepend">
-                                                        <div class="input-group-text"><i class="fas fa-box-open"></i></div>
-                                                    </div>
-                                                    {!! Form::select('user_type', getUserRoleArray('list', null), $u->role, ['class' => 'custom-select']) !!}
+                                                    <div class="input-group-text"><i class="fas fa-box-open"></i></div>
+                                                    {!! Form::select('user_type', getUserRoleArray('list', null), $u->role, ['class' => 'form-select']) !!}
                                                 </div>
                                             </div>
                                         </div>

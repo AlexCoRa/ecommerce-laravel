@@ -82,26 +82,7 @@ class UserController extends Controller
 
     public function postUserPermissions(Request $request, $id) {
         $u = User::findOrFail($id);
-        $permissions = [
-            'dashboard' => $request->input('dashboard'),
-            'products' => $request->input('products'),
-            'products_add' => $request->input('products_add'),
-            'product_search' => $request->input('product_search'),
-            'products_edit' => $request->input('products_edit'),
-            'products_delete' => $request->input('products_delete'),
-            'product_gallery_add' => $request->input('product_gallery_add'),
-            'product_gallery_delete' => $request->input('product_gallery_delete'),
-            'categories' => $request->input('categories'),
-            'category_add' => $request->input('category_add'),
-            'category_edit' => $request->input('category_edit'),
-            'category_delete' => $request->input('category_delete'),
-            'users_list' => $request->input('users_list'),
-            'users_edit' => $request->input('users_edit'),
-            'user_banned' => $request->input('user_banned'),
-            'user_permission' => $request->input('user_permission')
-        ];
-        $permissions = json_encode($permissions);
-        $u->permissions = $permissions;
+        $u->permissions = $request->except(['_token']);
         if ($u->save()):
             return back()->with('message','Los permisos del usuario fueron actualizados con éxito.')->with('typealert', 'success');
         endif;

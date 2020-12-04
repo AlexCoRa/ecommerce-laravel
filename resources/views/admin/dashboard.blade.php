@@ -4,13 +4,58 @@
 
 @section('content')
     <div class="container-fluid">
-        <div class="panel shadow">
-            <div class="header">
-                <h2 class="title"><i class="fas fa-home"></i> Dashboard</h2>
+        @if(kvfj(\Illuminate\Support\Facades\Auth::user()->permissions, 'dashboard_small_stats'))
+            <div class="panel shadow">
+                <div class="header">
+                    <h2 class="title"><i class="fas fa-chart-bar"></i> Estadísticas rápidas</h2>
+                </div>
             </div>
-            <div class="inside">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad delectus dicta dolore dolorem ea enim est, ex facilis mollitia, nesciunt repellendus sapiente sequi tenetur totam velit voluptate voluptates. Asperiores dolor dolores ducimus illum laborum molestias pariatur porro quia temporibus totam!
+
+            <div class="row mt-3">
+                <div class="col-md-3">
+                    <div class="panel shadow">
+                        <div class="header">
+                            <h2 class="title"><i class="fas fa-users"></i> Usuarios registrados</h2>
+                        </div>
+                        <div class="inside">
+                            <div class="big_count">{{ $users }}</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="panel shadow">
+                        <div class="header">
+                            <h2 class="title"><i class="fas fa-boxes"></i> Productos públicos</h2>
+                        </div>
+                        <div class="inside">
+                            <div class="big_count">{{ $products }}</div>
+                        </div>
+                    </div>
+                </div>
+                @if(kvfj(\Illuminate\Support\Facades\Auth::user()->permissions, 'dashboard_sell_today'))
+                    <div class="col-md-3">
+                        <div class="panel shadow">
+                            <div class="header">
+                                <h2 class="title"><i class="fas fa-shopping-basket"></i> Ordenes hoy</h2>
+                            </div>
+                            <div class="inside">
+                                <div class="big_count">0</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="panel shadow">
+                            <div class="header">
+                                <h2 class="title"><i class="fas fa-credit-card"></i> Facturado hoy</h2>
+                            </div>
+                            <div class="inside">
+                                <div class="big_count">0</div>
+                            </div>
+                        </div>
+                    </div>
+                @endif
             </div>
-        </div>
+        @endif
     </div>
 @endsection

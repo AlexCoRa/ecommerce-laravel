@@ -2,21 +2,59 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8014a567-7f8f-4f60-9e07-4b74e2f59d3d" name="Default Changelist" comment="User Information Layout">
-      <change afterPath="$PROJECT_DIR$/public/uploads/2020-11-27/695-calcetines-2.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/uploads/2020-11-27/t_695-calcetines-2.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/products/search.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/ContentController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/static/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/static/css/style.styl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/static/images/logo_home.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/2020-12-03/901-smoking-blanco.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/2020-12-03/t_901-smoking-blanco.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/master.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/ProductController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/DashboardController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/DashboardController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Functions.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/bootstrap-grid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/bootstrap-grid.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/bootstrap-grid.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/bootstrap-grid.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/bootstrap-reboot.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/bootstrap-reboot.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/bootstrap-reboot.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/bootstrap-reboot.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/bootstrap.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/bootstrap.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/bootstrap.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/bootstrap.bundle.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/bootstrap.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/bootstrap.bundle.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/bootstrap.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/bootstrap.min.js.map" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/public/static/css/admin.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/static/css/admin.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/static/css/admin.styl" beforeDir="false" afterPath="$PROJECT_DIR$/public/static/css/admin.styl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/static/js/admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/static/js/admin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/categories/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/categories/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/categories/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/categories/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/dashboard.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/master.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/products/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/products/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/users/permissions/module_products.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/users/permissions/module_products.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/products/add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/products/add.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/products/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/products/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/users/permissions/module_categories.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/users/permissions/module_dashboard.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/users/permissions/module_products.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/users/permissions/module_users.blade.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/users/user_edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/users/user_edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/users/user_permissions.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/users/user_permissions.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/connect/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/connect/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/connect/recover.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/connect/recover.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/connect/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/connect/register.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/connect/reset.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/connect/reset.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,18 +205,18 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\laragon\www\ecommerce\public\static\images" />
+      <recent name="C:\laragon\www\ecommerce\public" />
+      <recent name="C:\laragon\www\ecommerce\public\static\libs" />
+      <recent name="C:\laragon\www\ecommerce\resources\lang" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\laragon\www\ecommerce\resources\views\admin\products" />
       <recent name="C:\laragon\www\ecommerce\resources\views\admin\users\permissions" />
       <recent name="C:\laragon\www\ecommerce\resources\views\admin\users" />
       <recent name="C:\laragon\www\ecommerce\resources\views\emails" />
       <recent name="C:\laragon\www\ecommerce\resources\views\connect" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\laragon\www\ecommerce\public\static\images" />
-      <recent name="C:\laragon\www\ecommerce\public\static\libs" />
-      <recent name="C:\laragon\www\ecommerce\resources\lang" />
-      <recent name="C:\laragon\www\ecommerce\public" />
     </key>
   </component>
   <component name="RunManager">
@@ -221,7 +259,10 @@
       <workItem from="1606410324697" duration="740000" />
       <workItem from="1606412549584" duration="20937000" />
       <workItem from="1606495887723" duration="2642000" />
-      <workItem from="1606754549078" duration="15407000" />
+      <workItem from="1606754549078" duration="15892000" />
+      <workItem from="1606933072090" duration="155000" />
+      <workItem from="1606958720397" duration="63000" />
+      <workItem from="1607014970990" duration="21463000" />
     </task>
     <task id="LOCAL-00001" summary="Ecommerce laravel">
       <created>1602556183998</created>

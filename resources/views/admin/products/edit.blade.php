@@ -21,27 +21,21 @@
                                     <div class="col-md-6">
                                         <label for="name">Nombre del Producto:</label>
                                         <div class="input-group">
-                                            <div class="input-group-prepend">
-                                                <div class="input-group-text"><i class="fas fa-file-signature"></i></div>
-                                            </div>
+                                            <div class="input-group-text"><i class="fas fa-file-signature"></i></div>
                                             {!! Form::text('name', $p->name,['class' => 'form-control']) !!}
                                         </div>
                                     </div>
                                     <div class="col-md-3">
                                         <label for="category">Categoría:</label>
                                         <div class="input-group">
-                                            <div class="input-group-prepend">
-                                                <div class="input-group-text"><i class="fas fa-box-open"></i></div>
-                                            </div>
-                                            {!! Form::select('category', $cats, $p->category_id, ['class' => 'custom-select']) !!}
+                                            <div class="input-group-text"><i class="fas fa-box-open"></i></div>
+                                            {!! Form::select('category', $cats, $p->category_id, ['class' => 'form-select']) !!}
                                         </div>
                                     </div>
                                     <div class="col-md-3">
                                         <label for="price">Precio:</label>
                                         <div class="input-group">
-                                            <div class="input-group-prepend">
-                                                <div class="input-group-text"><i class="fas fa-dollar-sign"></i></div>
-                                            </div>
+                                            <div class="input-group-text"><i class="fas fa-dollar-sign"></i></div>
                                             {!! Form::number('price', $p->price,['class' => 'form-control', 'min' => '0.00', 'step' => 'any']) !!}
                                         </div>
                                     </div>
@@ -49,36 +43,29 @@
                                 <div class="row mt-3">
                                     <div class="col-md-3">
                                         <label for="img">Imagen:</label>
-                                        <div class="custom-file">
-                                            {!! Form::file('img', ['class' => 'custom-file-input', 'id' => 'customFile', 'accept' => 'image/*']) !!}
-                                            <label class="custom-file-label" for="customFile">Choose file</label>
+                                        <div class="input-group mb-3">
+                                            {!! Form::file('img', ['class' => 'form-control', 'id' => 'customFile', 'accept' => 'image/*']) !!}
                                         </div>
                                     </div>
                                     <div class="col-md-3">
                                         <label for="indiscount">¿En Descuento?:</label>
                                         <div class="input-group">
-                                            <div class="input-group-prepend">
-                                                <div class="input-group-text"><i class="fas fa-search-dollar"></i></div>
-                                            </div>
-                                           {!! Form::select('indiscount', ['0' => 'No', '1' => 'Si'], $p->in_discount, ['class' => 'custom-select']) !!}
+                                            <div class="input-group-text"><i class="fas fa-search-dollar"></i></div>
+                                           {!! Form::select('indiscount', ['0' => 'No', '1' => 'Si'], $p->in_discount, ['class' => 'form-select']) !!}
                                         </div>
                                     </div>
                                     <div class="col-md-3">
                                         <label for="discount">Descuento:</label>
                                         <div class="input-group">
-                                            <div class="input-group-prepend">
-                                                <div class="input-group-text"><i class="fas fa-percentage"></i></div>
-                                            </div>
+                                            <div class="input-group-text"><i class="fas fa-percentage"></i></div>
                                             {!! Form::number('discount', $p->discount,['class' => 'form-control', 'min' => '0.00', 'step' => 'any']) !!}
                                         </div>
                                     </div>
                                     <div class="col-md-3">
                                         <label for="status">Estado:</label>
                                         <div class="input-group">
-                                            <div class="input-group-prepend">
-                                                <div class="input-group-text"><i class="fas fa-search-dollar"></i></div>
-                                            </div>
-                                            {!! Form::select('status', ['0' => 'Borrador', '1' => 'Publico'], $p->status, ['class' => 'custom-select']) !!}
+                                            <div class="input-group-text"><i class="fas fa-search-dollar"></i></div>
+                                            {!! Form::select('status', ['0' => 'Borrador', '1' => 'Publico'], $p->status, ['class' => 'form-select']) !!}
                                         </div>
                                     </div>
                                 </div>
@@ -86,18 +73,14 @@
                                     <div class="col-md-4">
                                         <label for="inventory">Inventario:</label>
                                         <div class="input-group">
-                                            <div class="input-group-prepend">
-                                                <div class="input-group-text"><i class="fas fa-dolly-flatbed"></i></div>
-                                            </div>
+                                            <div class="input-group-text"><i class="fas fa-dolly-flatbed"></i></div>
                                             {!! Form::number('inventory', $p->inventory, ['class' => 'form-control', 'min' => '0.00']) !!}
                                         </div>
                                     </div>
                                     <div class="col-md-4">
                                         <label for="code">Código de Sistema:</label>
                                         <div class="input-group">
-                                            <div class="input-group-prepend">
-                                                <div class="input-group-text"><i class="fas fa-qrcode"></i></div>
-                                            </div>
+                                            <div class="input-group-text"><i class="fas fa-qrcode"></i></div>
                                             {!! Form::text('code', $p->code,['class' => 'form-control']) !!}
                                         </div>
                                     </div>

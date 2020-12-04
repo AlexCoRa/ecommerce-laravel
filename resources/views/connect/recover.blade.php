@@ -13,9 +13,7 @@
         {!! Form::open(['url' => '/recover']) !!}
         <label for="email">Email:</label>
         <div class="input-group mb-2">
-            <div class="input-group-prepend">
-                <div class="input-group-text"><i class="far fa-envelope-open"></i></div>
-            </div>
+            <div class="input-group-text"><i class="far fa-envelope-open"></i></div>
             {!! Form::email('email', null, ['class' => 'form-control'], 'required') !!}
         </div>
         {!! Form::submit('Recuperar Contraseña', ['class' => 'btn btn-primary mt-3 w-100']) !!}

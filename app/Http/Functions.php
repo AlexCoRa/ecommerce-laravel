@@ -48,6 +48,55 @@ function getUserStatusArray($mode, $id) {
     endif;
 }
 
+function userPermissions() {
+    $p = [
+        'dashboard' => [
+            'icon' => '<i class="fas fa-home"></i>',
+            'title' => 'Modulo Dashboard',
+            'keys' => [
+                'dashboard' => 'Puede ver el dashboard.',
+                'dashboard_small_stats' => 'Puede ver las estadísticas rápidas.',
+                'dashboard_sell_today' => 'Puede ver lo facturado hoy.'
+            ]
+        ],
+        'users' => [
+            'icon' => '<i class="fas fa-users"></i>',
+            'title' => 'Modulo Usuarios',
+            'keys' => [
+                'users_list' => 'Puede ver el listado de los usuarios.',
+                'users_edit' => 'Puede editar usuarios.',
+                'user_banned' => 'Puede banear usuarios.',
+                'user_permission' => 'Puede dar permisos a usuarios.'
+            ]
+        ],
+        'products' => [
+            'icon' => '<i class="fas fa-boxes"></i>',
+            'title' => 'Modulo Productos',
+            'keys' => [
+                'products' => 'Puede ver el listado de productos.',
+                'products_add' => 'Puede agregar nuevos productos.',
+                'products_edit' => 'Puede editar productos.',
+                'product_search' => 'Puede buscar productos.',
+                'products_delete' => 'Puede eliminar productos.',
+                'product_gallery_add' => 'Puede agregar imágenes al producto.',
+                'product_gallery_delete' => 'Puede eliminar imágenes del producto.'
+            ]
+        ],
+        'categories' => [
+            'icon' => '<i class="fas fa-folder-open"></i>',
+            'title' => 'Modulo Categorias',
+            'keys' => [
+                'categories' => 'Puede ver el listado de categorías.',
+                'category_add' => 'Puede crear nuevas categorías.',
+                'category_edit' => 'Puede editar categorías.',
+                'category_delete' => 'Puede eliminar categorías.'
+
+            ]
+        ],
+    ];
+    return $p;
+}
+
 
 
 

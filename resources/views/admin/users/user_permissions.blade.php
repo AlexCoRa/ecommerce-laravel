@@ -12,15 +12,29 @@
         <div class="page_user">
             <form action="{{ url('/admin/user/'.$u->id.'/permissions') }}" method="POST">
                 @csrf
+
                 <div class="row">
-                    @include('admin.users.permissions.module_dashboard')
-                    @include('admin.users.permissions.module_users')
-                    @include('admin.users.permissions.module_products')
+                    <!--Sistema de permisos semi automatizados en Functions-->
+                    @foreach(userPermissions() as $key => $value)
+                        <div class="col-md-4 d-flex mb-4">
+                            <div class="panel shadow">
+                                <div class="header">
+                                    <h2 class="title">{!! $value['icon'] !!} {!! $value['title'] !!}</h2>
+                                </div>
+                                <div class="inside">
+                                    @foreach($value['keys'] as $k => $v)
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="true" name="{{ $k }}" @if(kvfj($u->permissions, $k)) checked @endif >
+                                            <label class="form-check-label" for="dashboard">{{ $v }}</label>
+                                        </div>
+                                    @endforeach
+                                </div>
+                            </div>
+                        </div>
+                    @endforeach
+
                 </div>
-                <div class="row mt-3">
-                    @include('admin.users.permissions.module_categories')
-                </div>
-                <div class="row mt-3">
+                <div class="row">
                     <div class="col-md-12">
                         <div class="panel shadow">
                             <div class="inside">

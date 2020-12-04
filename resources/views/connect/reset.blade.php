@@ -13,17 +13,13 @@
         {!! Form::open(['url' => '/reset']) !!}
         <label for="email">Email:</label>
         <div class="input-group mb-2">
-            <div class="input-group-prepend">
-                <div class="input-group-text"><i class="far fa-envelope-open"></i></div>
-            </div>
+            <div class="input-group-text"><i class="far fa-envelope-open"></i></div>
             {!! Form::email('email', $email, ['class' => 'form-control'], 'required') !!}
         </div>
 
         <label class="mt-3" for="code">Código de recuperación:</label>
         <div class="input-group mb-2">
-            <div class="input-group-prepend">
-                <div class="input-group-text"><i class="far fa-envelope-open"></i></div>
-            </div>
+            <div class="input-group-text"><i class="far fa-envelope-open"></i></div>
             {!! Form::number('code', null, ['class' => 'form-control'], 'required') !!}
         </div>
 

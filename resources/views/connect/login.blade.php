@@ -13,16 +13,12 @@
         {!! Form::open(['url' => '/login']) !!}
         <label for="email">Email:</label>
         <div class="input-group mb-2">
-            <div class="input-group-prepend">
-                <div class="input-group-text"><i class="far fa-envelope-open"></i></div>
-            </div>
+            <div class="input-group-text"><i class="far fa-envelope-open"></i></div>
             {!! Form::email('email', null, ['class' => 'form-control', 'required']) !!}
         </div>
         <label for="password" class="mt-2">Password:</label>
         <div class="input-group mb-2">
-            <div class="input-group-prepend">
-                <div class="input-group-text"><i class="fas fa-lock"></i></div>
-            </div>
+            <div class="input-group-text"><i class="fas fa-lock"></i></div>
             {!! Form::password('password', ['class' => 'form-control', 'required']) !!}
         </div>
         {!! Form::submit('Ingresar', ['class' => 'btn btn-primary mt-3 w-100']) !!}
