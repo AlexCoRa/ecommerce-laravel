@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ConnectController;
 use App\Http\Controllers\ContentController;
+use \App\Http\Controllers\UserController;
 
 
 /*
@@ -31,5 +32,6 @@ Route::get('/logout', [ConnectController::class, 'logout'])->name('logout');
 Route::get('/register', [ConnectController::class, 'getRegister'])->name('register');
 Route::post('/register', [ConnectController::class, 'postRegister'])->name('register');
 
-
+//Module User Actions
+Route::get('/account/edit', [UserController::class, 'getAccountEdit'])->name('account_edit');
 

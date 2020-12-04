@@ -97,6 +97,36 @@ function userPermissions() {
     return $p;
 }
 
+function getUserYears() {
+    $ya = date('Y');
+    $ym = $ya - 18;
+    $yo = $ym - 62;
+
+    return [$ym, $yo];
+}
+
+function getMonths($mode, $key) {
+    $m = [
+        '1' => 'Enero',
+        '2' => 'Febrero',
+        '3' => 'Marzo',
+        '4' => 'Abril',
+        '5' => 'Mayo',
+        '6' => 'Junio',
+        '7' => 'Julio',
+        '8' => 'Agosto',
+        '9' => 'Septiembre',
+        '10' => 'Octubre',
+        '11' => 'Noviembre',
+        '12' => 'Diciembre'
+    ];
+    if ($mode == 'list') {
+        return $m;
+    }else {
+        return $m[$key];
+    }
+}
+
 
 
 

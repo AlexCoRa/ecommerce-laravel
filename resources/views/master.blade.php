@@ -68,7 +68,11 @@
                                     {{ \Illuminate\Support\Facades\Auth::user()->lastname }}
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="{{ url('/') }}"><i class="fas fa-address-card"></i> Mi perfil</a></li>
+                                    @if(\Illuminate\Support\Facades\Auth::user()->role == '1')
+                                        <li><a class="dropdown-item" href="{{ url('/admin') }}"><i class="fas fa-chalkboard-teacher"></i> Administración</a></li>
+                                        <li><hr class="dropdown-divider"></li>
+                                    @endif
+                                    <li><a class="dropdown-item" href="{{ url('/account/edit') }}"><i class="fas fa-address-card"></i> Mi perfil</a></li>
                                     <li><a class="dropdown-item" href="{{ url('/logout') }}"><i class="fas fa-sign-out-alt"></i> Salir</a></li>
                                 </ul>
                             </li>
@@ -77,9 +81,6 @@
                 </div>
             </div>
         </nav>
-
-
-
 
         @if(\Illuminate\Support\Facades\Session::has('message'))
             <div class="container-fluid">
@@ -101,5 +102,11 @@
                 </div>
             </div>
         @endif
+
+        <div class="wrapper">
+            <div class="container">
+                @yield('content')
+            </div>
+        </div>
     </body>
 </html>
