@@ -59,6 +59,10 @@ return [
             'driver' => 'local',
             'root' => 'C:/laragon/www/ecommerce/public/uploads',
         ],
+        'uploads_users' => [
+            'driver' => 'local',
+            'root' => 'C:/laragon/www/ecommerce/public/uploads_users',
+        ],
 
         's3' => [
             'driver' => 's3',

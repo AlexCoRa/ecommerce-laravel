@@ -63,6 +63,8 @@
                                 <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
                                     @if(is_null(\Illuminate\Support\Facades\Auth::user()->avatar))
                                         <img src="{{ url('/static/images/default_profile.jpg') }}">
+                                    @else
+                                        <img src="{{ url('/uploads_users/'.\Illuminate\Support\Facades\Auth::id().'/av_'.\Illuminate\Support\Facades\Auth::user()->avatar) }}" alt="">
                                     @endif
                                     {{ \Illuminate\Support\Facades\Auth::user()->name }}
                                     {{ \Illuminate\Support\Facades\Auth::user()->lastname }}
@@ -83,7 +85,7 @@
         </nav>
 
         @if(\Illuminate\Support\Facades\Session::has('message'))
-            <div class="container-fluid">
+            <div class="container">
                 <div class="alert alert-{{\Illuminate\Support\Facades\Session::get('typealert')}} mt-2" style="display: block; margin-bottom: 16px;">
                     {{ \Illuminate\Support\Facades\Session::get('message') }}
                     @if($errors->any())
@@ -102,7 +104,6 @@
                 </div>
             </div>
         @endif
-
         <div class="wrapper">
             <div class="container">
                 @yield('content')

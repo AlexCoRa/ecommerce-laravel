@@ -5,15 +5,29 @@
 @section('content')
     <div class="row mt-4">
         <div class="col-md-4">
+            <!--Editar avatar-->
             <div class="panel shadow">
                 <div class="header">
                     <h2 class="title"><i class="fas fa-user"></i> Editar Avatar</h2>
                 </div>
                 <div class="inside">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. A adipisci, amet at beatae, deleniti dolore dolores eaque eius eos, error est facere facilis fugit illum ipsa iste itaque laborum necessitatibus neque nulla pariatur perspiciatis quasi quibusdam quisquam reprehenderit sit voluptas?
+                    <div class="edit_avatar">
+                        {!! Form::open(['url' => '/account/edit/avatar', 'id' => 'form_avatar_change' ,'files' => true]) !!}
+                            <a href="#" id="btn_avatar_edit">
+                                <span class="overlay" id="avatar_change_overlay"><i class="fas fa-camera"></i></span>
+                                @if(is_null(\Illuminate\Support\Facades\Auth::user()->avatar))
+                                    <img src="{{ url('/static/images/default_profile.jpg') }}">
+                                @else
+                                    <img src="{{ url('/uploads_users/'.\Illuminate\Support\Facades\Auth::id().'/av_'.\Illuminate\Support\Facades\Auth::user()->avatar) }}" alt="">
+                                @endif
+                            </a>
+                        {!! Form::file('avatar', ['id' => 'input_file_avatar', 'accept' => 'image/*' ,'class' => 'form-control']) !!}
+                        {!! Form::close() !!}
+                    </div>
                 </div>
             </div>
-            <div class="panel shadow mt-3">
+            <!--Editar contraseña-->
+            <div class="panel shadow mt-3 mb-3">
                 <div class="header">
                     <h2 class="title"><i class="fas fa-unlock-alt"></i> Cambiar Contraseña</h2>
                 </div>
@@ -28,10 +42,10 @@
                             </div>
                         </div>
                         <div class="col-md-12 mt-3">
-                            <label for="npassword">Nueva Contraseña:</label>
+                            <label for="password">Nueva Contraseña:</label>
                             <div class="input-group">
                                 <div class="input-group-text"><i class="fas fa-file-signature"></i></div>
-                                {!! Form::password('npassword' ,['class' => 'form-control']) !!}
+                                {!! Form::password('password' ,['class' => 'form-control']) !!}
                             </div>
                         </div>
                         <div class="col-md-12 mt-3">
@@ -42,15 +56,15 @@
                             </div>
                         </div>
                         <div class="col-md-12 mt-3">
-                            {!! Form::submit('Guardar' ,['class' => 'btn btn-primary']) !!}
+                            {!! Form::submit('Guardar' ,['class' => 'btn btn-secondary']) !!}
                         </div>
                     </div>
                     {!! Form::close() !!}
                 </div>
             </div>
         </div>
-
-        <div class="col-md-8">
+        <!--Editar informacion-->
+        <div class="col-md-8 mb-3">
             <div class="panel shadow">
                 <div class="header">
                     <h2 class="title"><i class="fas fa-address-card"></i> Editar Informacíon</h2>
@@ -92,9 +106,9 @@
                             <label for="module">Fecha de Nacimiento: Año - Mes - Dia</label>
                             <div class="input-group">
                                 <div class="input-group-text"><i class="fas fa-box-open"></i></div>
-                                {!! Form::number('year', null, ['class' => 'form-control', 'min' => getUserYears()[1], 'max' => getUserYears()[0] , 'required']) !!}
-                                {!! Form::select('user_type', getMonths('list', null), null, ['class' => 'form-select']) !!}
-                                {!! Form::number('year', null, ['class' => 'form-control', 'min' => 1, 'max' => 31, 'required']) !!}
+                                {!! Form::number('year', $birthday[0], ['class' => 'form-control', 'min' => getUserYears()[1], 'max' => getUserYears()[0] , 'required']) !!}
+                                {!! Form::select('month', getMonths('list', null), $birthday[1], ['class' => 'form-select']) !!}
+                                {!! Form::number('day', $birthday[2], ['class' => 'form-control', 'min' => 01, 'max' => 31, 'required']) !!}
                             </div>
                         </div>
                     </div>
@@ -103,13 +117,13 @@
                             <label for="module">Genero: </label>
                             <div class="input-group">
                                 <div class="input-group-text"><i class="fas fa-box-open"></i></div>
-                                {!! Form::select('gener', ['0' => 'Sin especificar', '1' => 'Hombre', '2' => 'Mujer'], null, ['class' => 'form-select']) !!}
+                                {!! Form::select('gender', ['0' => 'Sin especificar', '1' => 'Hombre', '2' => 'Mujer'], \Illuminate\Support\Facades\Auth::user()->gender, ['class' => 'form-select']) !!}
                             </div>
                         </div>
                     </div>
                     <div class="row mt-3">
                         <div class="col-md-12">
-                            {!! Form::submit('Guardar', ['class' => 'btn btn-primary']) !!}
+                            {!! Form::submit('Guardar', ['class' => 'btn btn-secondary']) !!}
                         </div>
                     </div>
                     {!! Form::close() !!}

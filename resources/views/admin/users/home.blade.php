@@ -33,6 +33,7 @@
                     <thead>
                     <tr>
                         <th scope="col">#</th>
+                        <th scope="col"></th>
                         <th scope="col">Nombre</th>
                         <th scope="col">Apellidos</th>
                         <th scope="col">Email</th>
@@ -46,6 +47,13 @@
                     @foreach($users as $user)
                         <tr>
                             <th scope="row">{{ $user->id }}</th>
+                            <td style="border-radius: 50%; width: 55px !important;">
+                                @if(is_null($user->avatar))
+                                    <img src="{{ url('/static/images/default_profile.jpg') }}" alt="profile" class="img-fluid avatar">
+                                @else
+                                    <img style="border-radius: 50%;" src="{{ url('/uploads_users/'.$user->id.'/av_'.$user->avatar) }}" alt="profile" class="img-fluid avatar">
+                                @endif
+                            </td>
                             <td>{{ $user->name }}</td>
                             <td>{{ $user->lastname }}</td>
                             <td>{{ $user->email }}</td>

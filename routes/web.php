@@ -34,4 +34,6 @@ Route::post('/register', [ConnectController::class, 'postRegister'])->name('regi
 
 //Module User Actions
 Route::get('/account/edit', [UserController::class, 'getAccountEdit'])->name('account_edit');
-
+Route::post('/account/edit/avatar',[UserController::class, 'postAccountAvatar'])->name('account_avatar_edit');
+Route::post('/account/edit/password',[UserController::class, 'postAccountPassword'])->name('account_password_edit');
+Route::post('/account/edit/info',[UserController::class, 'postAccountInfo'])->name('account_info_edit');
