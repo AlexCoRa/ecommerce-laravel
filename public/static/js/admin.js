@@ -68,14 +68,13 @@ function delete_object(e) {
         icon = "info";
     }
 
-    swal({
+    Swal.fire({
         title: title,
         text: text,
         icon: icon,
-        buttons: true,
-        dangerMode: true,
-    }).then((willDelete) => {
-        if (willDelete) {
+        showCancelButton: true,
+    }).then((result) => {
+        if (result.isConfirmed) {
             window.location.href = url;
         }
     });

@@ -29,7 +29,7 @@
     <script src="{{ url('/static/libs/ckeditor/ckeditor.js') }}"></script>
 
     <!--sweetalert-->
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 
     <script src="{{ url('/static/js/admin.js?v='.time()) }}"></script>
 

@@ -69,7 +69,7 @@
                         @foreach($products as $p)
                             <tr>
                                 <th scope="row">{{ $p->id }}</th>
-                                <td><a href="{{ url('/uploads/'.$p->file_path.'/'.$p->image) }}" data-fancybox="gallery"><img src="{{ url('/uploads/'.$p->file_path.'/t_'.$p->image) }}" style="width: 40%" ></a></td>
+                                <td><a href="{{ url('/uploads/'.$p->file_path.'/'.$p->image) }}" data-fancybox="gallery"><img src="{{ url('/uploads/'.$p->file_path.'/t_'.$p->image) }}" style="width: 25%" ></a></td>
                                 <td style="margin-left: 200px !important;">{{ $p->name }} @if($p->status == "0") <i class="fas fa-eraser" data-toggle="tooltip" data-placement="top" title="Estado: Borrador"></i> @else <i class="fas fa-globe-americas" data-toggle="tooltip" data-placement="top" title="Estado: Publico"></i> @endif</td>
                                 <td>{{ $p->cat->name }}</td>
                                 <td>${{ $p->price }}</td>

@@ -93,7 +93,21 @@ function userPermissions() {
 
             ]
         ],
-    ];
+        'settings' => [
+            'icon' => '<i class="fas fa-cogs"></i>',
+            'title' => 'Modulo de Configuraciones',
+            'keys' => [
+                'settings' => 'Puede modificar la configuración.',
+            ]
+        ],
+        'orders' => [
+            'icon' => '<i class="fas fa-clipboard-list"></i>',
+            'title' => 'Modulo de Ordenes',
+            'keys' => [
+                'orders_list' => 'Puede ver el listado de ordenes.',
+            ]
+        ]
+     ];
     return $p;
 }
 

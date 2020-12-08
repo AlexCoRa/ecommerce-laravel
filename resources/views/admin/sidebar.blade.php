@@ -19,14 +19,20 @@
             @if(kvfj(\Illuminate\Support\Facades\Auth::user()->permissions, 'dashboard'))
                 <li><a href="{{ url('/admin') }}"><i class="fas fa-home"></i>Dashboard</a></li>
             @endif
-            @if(kvfj(\Illuminate\Support\Facades\Auth::user()->permissions, 'products'))
-                <li><a href="{{ url('/admin/products/1') }}"><i class="fas fa-boxes"></i>Productos</a></li>
-            @endif
             @if(kvfj(\Illuminate\Support\Facades\Auth::user()->permissions, 'categories'))
                 <li><a href="{{ url('/admin/categories/0') }}"><i class="fas fa-folder-open"></i>Categorias</a></li>
             @endif
+            @if(kvfj(\Illuminate\Support\Facades\Auth::user()->permissions, 'products'))
+                <li><a href="{{ url('/admin/products/1') }}"><i class="fas fa-boxes"></i>Productos</a></li>
+            @endif
+            @if(kvfj(\Illuminate\Support\Facades\Auth::user()->permissions, 'orders_list'))
+                <li><a href="{{ url('/admin/orders/all') }}"><i class="fas fa-clipboard-list"></i>Ordenes</a></li>
+            @endif
             @if(kvfj(\Illuminate\Support\Facades\Auth::user()->permissions, 'users_list'))
                  <li><a href="{{ url('/admin/users/all') }}"><i class="fas fa-users"></i>Usuarios</a></li>
+            @endif
+            @if(kvfj(\Illuminate\Support\Facades\Auth::user()->permissions, 'settings'))
+                <li><a href="{{ url('/admin/settings') }}"><i class="fas fa-cogs"></i>Configuraciones</a></li>
             @endif
         </ul>
     </div>

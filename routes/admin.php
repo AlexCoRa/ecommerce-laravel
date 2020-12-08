@@ -5,11 +5,16 @@ use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\UserController;
 use App\Http\Controllers\Admin\ProductController;
 use App\Http\Controllers\Admin\CategoryController;
+use App\Http\Controllers\Admin\SettingsController;
 
 
 
 Route::prefix('/admin')->group(function () {
     Route::get('/', [DashboardController::class, 'getDashboard'])->name('dashboard');
+
+    //Module Settings
+    Route::get('/settings', [SettingsController::class, 'getHome'])->name('settings');
+    Route::post('/settings', [SettingsController::class, 'postHome'])->name('settings');
 
     //Module Users
     Route::get('/users/{status}', [UserController::class, 'getUsers'])->name('users_list');
