@@ -2,18 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8014a567-7f8f-4f60-9e07-4b74e2f59d3d" name="Default Changelist" comment="User Information Layout">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/SettingsController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/gentleman.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/settings/settings.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/ProductController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Functions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/static/js/admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/static/js/admin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/master.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/products/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/products/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/sidebar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/css/connect.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/static/css/connect.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/css/connect.styl" beforeDir="false" afterPath="$PROJECT_DIR$/public/static/css/connect.styl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/static/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/css/style.styl" beforeDir="false" afterPath="$PROJECT_DIR$/public/static/css/style.styl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/connect/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/connect/login.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/master.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/admin.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,7 +156,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
+    <property name="settings.editor.selected.configurable" value="watcher.settings" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -225,7 +221,8 @@
       <workItem from="1607100552634" duration="7427000" />
       <workItem from="1607192106686" duration="20158000" />
       <workItem from="1607358946564" duration="155000" />
-      <workItem from="1607359525878" duration="17569000" />
+      <workItem from="1607359525878" duration="17868000" />
+      <workItem from="1607453562496" duration="10745000" />
     </task>
     <task id="LOCAL-00001" summary="Ecommerce laravel">
       <created>1602556183998</created>
@@ -336,83 +333,5 @@
     <MESSAGE value="Products Gallery" />
     <MESSAGE value="User Information Layout" />
     <option name="LAST_COMMIT_MESSAGE" value="User Information Layout" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="309" y="47" key="#Inspections" timestamp="1602609671854">
-      <screen x="0" y="0" width="1366" height="738" />
-    </state>
-    <state x="309" y="47" key="#Inspections/0.0.1366.738@0.0.1366.738" timestamp="1602609671854" />
-    <state x="436" y="159" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1602608904446">
-      <screen x="0" y="0" width="1366" height="738" />
-    </state>
-    <state x="436" y="159" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.738@0.0.1366.738" timestamp="1602608904446" />
-    <state x="363" y="105" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1607358997958">
-      <screen x="0" y="0" width="1366" height="738" />
-    </state>
-    <state x="363" y="105" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1366.738@0.0.1366.738" timestamp="1607358997958" />
-    <state x="413" y="124" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1607201498168">
-      <screen x="0" y="0" width="1366" height="738" />
-    </state>
-    <state x="413" y="124" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.738@0.0.1366.738" timestamp="1607201498168" />
-    <state x="306" y="0" key="CommitChangelistDialog2" timestamp="1604026332572">
-      <screen x="0" y="0" width="1366" height="738" />
-    </state>
-    <state x="306" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1604026332572" />
-    <state x="350" y="147" key="EditFileWatcherDialog" timestamp="1602608932521">
-      <screen x="0" y="0" width="1366" height="738" />
-    </state>
-    <state x="350" y="147" key="EditFileWatcherDialog/0.0.1366.738@0.0.1366.738" timestamp="1602608932521" />
-    <state x="463" y="110" key="FileChooserDialogImpl" timestamp="1602555997575">
-      <screen x="0" y="0" width="1366" height="738" />
-    </state>
-    <state x="463" y="110" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1602555997575" />
-    <state width="1323" height="175" key="GridCell.Tab.0.bottom" timestamp="1602627134793">
-      <screen x="0" y="0" width="1366" height="738" />
-    </state>
-    <state width="1323" height="175" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1602627134793" />
-    <state width="1323" height="175" key="GridCell.Tab.0.center" timestamp="1602627134777">
-      <screen x="0" y="0" width="1366" height="738" />
-    </state>
-    <state width="1323" height="175" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1602627134777" />
-    <state width="1323" height="175" key="GridCell.Tab.0.left" timestamp="1602627134777">
-      <screen x="0" y="0" width="1366" height="738" />
-    </state>
-    <state width="1323" height="175" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1602627134777" />
-    <state width="1323" height="175" key="GridCell.Tab.0.right" timestamp="1602627134777">
-      <screen x="0" y="0" width="1366" height="738" />
-    </state>
-    <state width="1323" height="175" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1602627134777" />
-    <state x="517" y="288" key="NewPhpFileDialog" timestamp="1602607991723">
-      <screen x="0" y="0" width="1366" height="738" />
-    </state>
-    <state x="517" y="288" key="NewPhpFileDialog/0.0.1366.738@0.0.1366.738" timestamp="1602607991723" />
-    <state x="184" y="14" key="SettingsEditor" timestamp="1603384191206">
-      <screen x="0" y="0" width="1366" height="738" />
-    </state>
-    <state x="184" y="14" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1603384191206" />
-    <state x="275" y="98" key="Vcs.Push.Dialog.v2" timestamp="1604026345759">
-      <screen x="0" y="0" width="1366" height="738" />
-    </state>
-    <state x="275" y="98" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1604026345759" />
-    <state x="500" y="279" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1602556149935">
-      <screen x="0" y="0" width="1366" height="738" />
-    </state>
-    <state x="500" y="279" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.738@0.0.1366.738" timestamp="1602556149935" />
-    <state x="391" y="57" width="583" height="624" key="find.popup" timestamp="1603145531877">
-      <screen x="0" y="0" width="1366" height="738" />
-    </state>
-    <state x="391" y="57" width="583" height="624" key="find.popup/0.0.1366.738@0.0.1366.738" timestamp="1603145531877" />
-    <state x="339" y="165" key="run.anything.popup" timestamp="1602721009530">
-      <screen x="0" y="0" width="1366" height="738" />
-    </state>
-    <state x="339" y="165" key="run.anything.popup/0.0.1366.738@0.0.1366.738" timestamp="1602721009530" />
-    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1602555681693">
-      <screen x="0" y="0" width="1366" height="738" />
-    </state>
-    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1602555681693" />
-    <state x="513" y="160" key="svn.repositoryBrowser" timestamp="1602556101192">
-      <screen x="0" y="0" width="1366" height="738" />
-    </state>
-    <state x="513" y="160" key="svn.repositoryBrowser/0.0.1366.738@0.0.1366.738" timestamp="1602556101192" />
   </component>
 </project>

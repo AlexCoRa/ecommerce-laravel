@@ -2,7 +2,7 @@
 <html lang="es">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta name="viewport" content="width=device-width, shrink-to-fit=no ,user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <meta name="csrf-token" content="{{ csrf_token() }}">
         <meta name="routeName" content="{{ \Illuminate\Support\Facades\Route::currentRouteName() }}">
@@ -27,26 +27,25 @@
         <title>@yield('title') - Gentleman</title>
     </head>
     <body>
-
-        <nav class="navbar navbar-expand-lg shadow">
+        <nav class="navbar navbar-expand-lg navbar-light shadow">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}"><img src="{{ url('static/images/logo_home.png') }}" alt=""></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigationMain" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse link">
+                <div class="collapse navbar-collapse link" id="navigationMain">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a href="{{ url('/') }}" class="nav-link"><i class="fas fa-home"></i> Inicio</a>
+                            <a href="{{ url('/') }}" class="nav-link"><i class="fas fa-home"></i> <span>Inicio</span></a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{ url('/') }}" class="nav-link"><i class="fas fa-store-alt"></i> Tienda</a>
+                            <a href="{{ url('/') }}" class="nav-link"><i class="fas fa-store-alt"></i> <span>Tienda</span></a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{ url('/') }}" class="nav-link"><i class="fas fa-user-friends"></i> Nosotros</a>
+                            <a href="{{ url('/') }}" class="nav-link"><i class="fas fa-user-friends"></i> <span>Nosotros</span></a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{ url('/') }}" class="nav-link"><i class="fas fa-paper-plane"></i> Contáctanos</a>
+                            <a href="{{ url('/') }}" class="nav-link"><i class="fas fa-paper-plane"></i> <span>Contáctanos</span></a>
                         </li>
                         <li class="nav-item">
                             <a href="{{ url('/') }}" class="nav-link"><i class="fas fa-shopping-cart"></i> <span class="car-number">(0)</span></a>

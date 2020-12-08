@@ -28,9 +28,6 @@ body {
             a {
                 display: inline-block;
 
-                &:last-child {
-                    margin-left: 80px;
-                }
             }
         }
 
@@ -53,5 +50,42 @@ body {
         }
     }
 
+}
+
+@media only screen and (max-width: 358px) {
+    .header {
+        a {
+            img {
+                position: relative;
+                margin-bottom: -47px;
+                margin-top: -40px;
+                left: calc(46% - 225px);
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 530px) {
+    .box {
+        width: 92%;
+        background-color: transparent;
+        border-radius: none;
+        border: none;
+        box-shadow: none;
+        .header {
+            a {
+                img {
+                    position: relative;
+                    margin-bottom: -47px;
+                    margin-top: -40px;
+                    left: calc(46% - 225px);
+                }
+            }
+        }
+
+        .inside {
+            padding: 0px;
+        }
+    }
 
 }
