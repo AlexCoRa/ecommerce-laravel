@@ -17,7 +17,7 @@
                         </div>
                         <div class="inside">
                             <div class="container">
-                                {!! Form::open(['url' => '/admin/category/add']) !!}
+                                {!! Form::open(['url' => '/admin/category/add', 'files' => true]) !!}
                                 <label for="name">Nombre:</label>
                                 <div class="input-group">
                                     <div class="input-group-text"><i class="fas fa-file-signature"></i></div>
@@ -28,10 +28,9 @@
                                     <div class="input-group-text"><i class="fas fa-box-open"></i></div>
                                     {!! Form::select('module', getModulesArray(), 0, ['class' => 'form-select']) !!}
                                 </div>
-                                <label class="mt-3" for="icono">Ícono:</label>
-                                <div class="input-group">
-                                    <div class="input-group-text"><i class="fas fa-icons"></i></div>
-                                    {!! Form::text('icono', null,['class' => 'form-control']) !!}
+                                <label class="mt-3" for="icono">Icono:</label>
+                                <div class="input-group mb-3">
+                                    {!! Form::file('icono', ['class' => 'form-control', 'required' ,'id' => 'customFile', 'accept' => 'image/*']) !!}
                                 </div>
                                 {!! Form::submit('Guardar', ['class'=>'btn btn-success mt-3']) !!}
                                 {!! Form::close() !!}
@@ -66,7 +65,11 @@
                                     @foreach($cats as $cat)
                                         <tr>
                                             <th scope="row"> {{ $cat->id }} </th>
-                                            <td>{!! htmlspecialchars_decode($cat->icono) !!}</td>
+                                            <td>
+                                                @if(!is_null($cat->icono))
+                                                    <img width="50px" src="{{ url('/uploads/'.$cat->file_path.'/'.$cat->icono) }}" alt="" class="img-fluid">
+                                                @endif
+                                            </td>
                                             <td>{{ $cat->name }}</td>
                                             <td>
                                                 @if(kvfj(\Illuminate\Support\Facades\Auth::user()->permissions, 'category_edit'))
