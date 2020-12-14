@@ -2,6 +2,7 @@ var base = location.protocol+'//'+location.host;
 var route = document.getElementsByName('routeName')[0].getAttribute('content');
 
 document.addEventListener('DOMContentLoaded', function () {
+    var slider = new MDSlider();
     var form_avatar_change = document.getElementById('form_avatar_change');
     var btn_avatar_edit = document.getElementById('btn_avatar_edit');
     var input_file_avatar = document.getElementById('input_file_avatar');
@@ -20,4 +21,5 @@ document.addEventListener('DOMContentLoaded', function () {
             form_avatar_change.submit();
         })
     }
+    slider.show();
 });

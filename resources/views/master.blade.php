@@ -22,6 +22,7 @@
         <script src="{{ url('/static/libs/ckeditor/ckeditor.js') }}"></script> -->
         <!--sweetalert-->
         <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <script src="{{ url('/static/js/mdslider.js?v='.time()) }}"></script>
         <script src="{{ url('/static/js/site.js?v='.time()) }}"></script>
 
         <title>@yield('title') - Gentleman</title>

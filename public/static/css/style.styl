@@ -1,7 +1,7 @@
 color1 = #b2b2b2;
 
 body {
-    background-color: #f9f9f9;
+    background-color: #f2f2f2;
     font-size: 14px;
     font-family: 'Roboto', Sans-Serif;
 }
@@ -204,6 +204,179 @@ nav {
         }
     }
 }
+
+.home_action_bar {
+    background-color: #fff;
+    border-radius: 4px;
+    margin-top: 14px;
+    padding: 14px;
+    .categories {
+        position: relative;
+        &:hover {
+            ul {
+                display: block;
+            }
+        }
+        a {
+            display: block;
+            padding: 8px;
+            border-radius: 4px;
+            width: 100%;
+            background-color: #444;
+            color: #fff;
+            text-transform: uppercase;
+            text-decoration: none;
+            transition: all 100ms;
+            &:hover {
+                background-color: #000000;
+            }
+        }
+        ul {
+            display: none;
+            list-style: none;
+            padding: 0px;
+            margin: 0px;
+            position: absolute;
+            width: 100%;
+            li {
+                a {
+                    background-color: #f8f8f8;
+                    border-radius: 0px;
+                    color: #444;
+                    &:hover {
+                        background-color: #444;
+                        color: #fff;
+                    }
+                    img {
+                        position: relative;
+                        margin-top: -5px;
+                        margin-right: 12px;
+                        width: 20px;
+                    }
+                }
+            }
+        }
+    }
+    .input-group {
+        position: relative;
+        i {
+            position: absolute;
+            font-size: 1.2em;
+            top: 11px;
+            left: 8px;
+            z-index: 10;
+            color: grey;
+        }
+        .form-control {
+            border-radius: 4px 0px 0px 4px !important;
+            z-index: 2;
+            padding-left: 32px;
+        }
+        &:focus-within {
+            i {
+                color: #612530;
+            }
+        }
+    }
+
+    .btn-outline-secondary {
+        border-color: #ced4da !important;
+        color: grey !important;
+        &:hover {
+            background-color: #444 !important;
+            color: white !important;
+        }
+    }
+}
+
+.mdslider {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 24px;
+    position: relative;
+    min-height: 380px;
+    width: 100%;
+    overflow: hidden;
+
+    ul.navigation {
+        display: block;
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        position: absolute;
+        overflow: hidden;
+        top: calc(50% - 18px);
+        z-index: 9;
+        li {
+            display: inline-flex;
+            float: left;
+            &:first-child {
+                margin-left: 16px;
+                a {
+                    i {
+                        position: relative;
+                        margin-left: -4px;
+                    }
+                }
+            }
+            &:last-child {
+                margin-right: 16px;
+                float: right;
+                a {
+                    i {
+                        position: relative;
+                        margin-left: 4px;
+                    }
+                }
+            }
+            a {
+                align-items: center;
+                background-color: rgba(0, 0, 0,0.5);
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                color: white;
+                width: 36px;
+                height: 36px;
+                text-decoration: none;
+                font-size: 1.5em;
+                transition: all 200ms;
+
+                &:hover {
+                    background-color: #444;
+                }
+            }
+        }
+    }
+    .md-slider-item {
+        position: absolute;
+        align-items: center;
+        display: none;
+        font-size: 4em;
+        justify-content: center;
+        background-color: white;
+        color: #444;
+        width: 100%;
+        border-radius: 4px;
+        min-height: 380px;
+        transition: all 700ms ease-in-out;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media only screen and (max-width: 991px) {
     nav {
