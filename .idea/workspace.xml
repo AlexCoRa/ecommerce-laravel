@@ -2,16 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8014a567-7f8f-4f60-9e07-4b74e2f59d3d" name="Default Changelist" comment="User Information Layout">
-      <change afterPath="$PROJECT_DIR$/public/static/js/mdslider.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/components/slider_home.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/SliderController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Slider.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_12_15_194547_create_sliders_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/slider/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/slider/home.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ContentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ContentController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/static/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/static/css/style.styl" beforeDir="false" afterPath="$PROJECT_DIR$/public/static/css/style.styl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/static/js/site.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/static/js/site.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/master.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/css/admin.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/static/css/admin.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/css/admin.styl" beforeDir="false" afterPath="$PROJECT_DIR$/public/static/css/admin.styl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/js/admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/static/js/admin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/categories/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/categories/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/products/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/products/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/sidebar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/admin.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -154,7 +158,7 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/admin/products" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/admin/slider" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -163,11 +167,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\laragon\www\ecommerce\resources\views\admin\slider" />
       <recent name="C:\laragon\www\ecommerce\resources\views\admin\products" />
       <recent name="C:\laragon\www\ecommerce\resources\views\admin\users\permissions" />
       <recent name="C:\laragon\www\ecommerce\resources\views\admin\users" />
       <recent name="C:\laragon\www\ecommerce\resources\views\emails" />
-      <recent name="C:\laragon\www\ecommerce\resources\views\connect" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\laragon\www\ecommerce\public\static\images" />
@@ -227,7 +231,8 @@
       <workItem from="1607453562496" duration="10862000" />
       <workItem from="1607626344595" duration="9025000" />
       <workItem from="1607708529423" duration="12520000" />
-      <workItem from="1607966753672" duration="11603000" />
+      <workItem from="1607966753672" duration="12400000" />
+      <workItem from="1608054863519" duration="14573000" />
     </task>
     <task id="LOCAL-00001" summary="Ecommerce laravel">
       <created>1602556183998</created>

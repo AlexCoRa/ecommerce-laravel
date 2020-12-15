@@ -6,6 +6,7 @@ use App\Http\Controllers\Admin\UserController;
 use App\Http\Controllers\Admin\ProductController;
 use App\Http\Controllers\Admin\CategoryController;
 use App\Http\Controllers\Admin\SettingsController;
+use App\Http\Controllers\Admin\SliderController;
 
 
 
@@ -15,6 +16,13 @@ Route::prefix('/admin')->group(function () {
     //Module Settings
     Route::get('/settings', [SettingsController::class, 'getHome'])->name('settings');
     Route::post('/settings', [SettingsController::class, 'postHome'])->name('settings');
+
+    //Slider
+    Route::get('/sliders', [SliderController::class, 'getHome'])->name('sliders');
+    Route::post('/slider/add', [SliderController::class, 'postSliderAdd'])->name('slider_add');
+    Route::get('/slider/{id}/edit', [SliderController::class, 'getSliderEdit'])->name('slider_edit');
+    Route::post('/slider/{id}/edit', [SliderController::class, 'postSliderEdit'])->name('slider_edit');
+    Route::get('/slider/{id}/delete', [SliderController::class, 'getSliderDelete'])->name('slider_delete');
 
     //Module Users
     Route::get('/users/{status}', [UserController::class, 'getUsers'])->name('users_list');

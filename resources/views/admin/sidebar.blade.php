@@ -1,7 +1,7 @@
 <div class="sidebar shadow">
     <div class="section-top">
         <div class="logo">
-            <img src="{{ url('static/images/logo.png') }}" alt="logo" class="img-fluid">
+            <a href="{{ url('/') }}"><img src="{{ url('static/images/logo.png') }}" alt="logo" class="img-fluid"></a>
         </div>
         <div class="user">
             <span class="subtitle">Hola:</span>
@@ -30,6 +30,9 @@
             @endif
             @if(kvfj(\Illuminate\Support\Facades\Auth::user()->permissions, 'users_list'))
                  <li><a href="{{ url('/admin/users/all') }}"><i class="fas fa-users"></i>Usuarios</a></li>
+            @endif
+            @if(kvfj(\Illuminate\Support\Facades\Auth::user()->permissions, 'sliders'))
+                <li><a href="{{ url('/admin/sliders') }}"><i class="fas fa-images"></i>Sliders</a></li>
             @endif
             @if(kvfj(\Illuminate\Support\Facades\Auth::user()->permissions, 'settings'))
                 <li><a href="{{ url('/admin/settings') }}"><i class="fas fa-cogs"></i>Configuraciones</a></li>

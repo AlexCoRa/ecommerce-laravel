@@ -58,7 +58,7 @@ function delete_object(e) {
     var url = base + '/' + path + '/' + object + '/' + action;
     var title, text, icon;
     if (action == "delete"){
-        title = "¿Estas seguro de eliminar este producto?";
+        title = "¿Estas seguro de eliminar este objeto?";
         text = "Recuerda, esta acción enviará a éste elemento a la papelera o lo eliminará de forma definitiva.";
         icon = "warning";
     }

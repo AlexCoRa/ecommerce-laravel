@@ -54,7 +54,6 @@
                             <table class="table table-striped mt-2">
                                 <thead>
                                 <tr>
-                                    <th scope="col">#</th>
                                     <th scope="col">Icono</th>
                                     <th scope="col">Nombre</th>
                                     <th scope="col"></th>
@@ -64,7 +63,6 @@
                                 <tbody>
                                     @foreach($cats as $cat)
                                         <tr>
-                                            <th scope="row"> {{ $cat->id }} </th>
                                             <td>
                                                 @if(!is_null($cat->icono))
                                                     <img width="50px" src="{{ url('/uploads/'.$cat->file_path.'/'.$cat->icono) }}" alt="" class="img-fluid">

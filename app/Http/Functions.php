@@ -93,6 +93,16 @@ function userPermissions() {
 
             ]
         ],
+        'sliders' => [
+            'icon' => '<i class="far fa-images"></i>',
+            'title' => 'Modulo de Sliders',
+            'keys' => [
+                'sliders' => 'Puede ver la lista de sliders.',
+                'slider_add' => 'Puede agregar sliders.',
+                'slider_edit' => 'Puede editar sliders.',
+                'slider_delete' => 'Puede eliminar sliders.'
+            ]
+        ],
         'settings' => [
             'icon' => '<i class="fas fa-cogs"></i>',
             'title' => 'Modulo de Configuraciones',
