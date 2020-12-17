@@ -212,6 +212,7 @@ nav {
     padding: 14px;
     .categories {
         position: relative;
+        z-index: 999;
         &:hover {
             ul {
                 display: block;
@@ -297,6 +298,8 @@ nav {
     min-height: 380px;
     width: 100%;
     overflow: hidden;
+    box-shadow: 6px 7px 8px rgba(0,0,0,0.4);
+    border-radius: 4px;
 
     ul.navigation {
         display: block;
@@ -352,7 +355,6 @@ nav {
         position: absolute;
         align-items: center;
         display: none;
-        font-size: 4em;
         justify-content: center;
         background-color: white;
         color: #444;
@@ -360,10 +362,139 @@ nav {
         border-radius: 4px;
         min-height: 380px;
         transition: all 700ms ease-in-out;
+        .col-md-7,
+        .col-md-5 {
+            padding: 0px !important;
+        }
+        .row {
+            margin: 0px !important;
+            padding: 0px !important;
+        }
+        .content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            background-color: #fafafa;
+            h2,p {
+                display: block;
+                text-align: center;
+                width: 100%;
+            }
+            .cinside {
+                text-align: center;
+                h2 {
+                    font-size: 1.8em;
+                }
+                .btn {
+                    display: inline-flex !important;
+                    margin: 0px auto !important;
+                }
+            }
+        }
     }
 }
 
+.products_list {
+    display: block;
+    margin-top: 32px;
+    overflow: hidden;
+    width: 100%;
 
+    .product {
+        display: inline-block;
+        float: left;
+        width: 18%;
+        margin-bottom: 24px;
+        margin-right: 2.5%;
+        position: relative;
+        &:nth-child(5n) {
+            margin-right: 0px;
+        }
+        &:hover {
+            .image {
+                img {
+                    transform: scale(1.05);
+                }
+                .overlay {
+                    display: flex;
+                }
+            }
+        }
+        .image {
+            display: block;
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+            .overlay {
+                position: absolute;
+                display: none;
+                flex: 1;
+                height: 100%;
+                background-color: rgba(0,0,0,0.5);
+                width: 100%;
+                z-index: 9;
+                transition: all 300ms ease-in-out;
+                border-radius: 4px;
+                .btns {
+                    position: absolute;
+                    bottom: 45%;
+                    display: block;
+                    left: 3%;
+                    width: 94%;
+                    overflow: hidden;
+                    a {
+                        display: block;
+                        width: 32%;
+                        float: left;
+                        text-align: center;
+                        background-color: #f6f6f6;
+                        margin-right: 1%;
+                        font-size: 1.5em;
+                        border-radius: 8px;
+                        color: #444;
+                        transition: all 200ms;
+                        &:hover {
+                            color: white;
+                            background-color: #444;
+                        }
+                    }
+                }
+            }
+            img {
+                display: block;
+                width: 100%;
+                border-radius: 4px;
+                transform: scale(1);
+                transition: all 300ms ease-in-out;
+                z-index: 4;
+            }
+        }
+        a {
+            display: block;
+            text-decoration: none;
+            width: 100%;
+            position: relative;
+            .title,
+            .price,
+            .options{
+                display: block;
+                width: 100%;
+            }
+            .title{
+                margin-top: 8px;
+                color: #111;
+                font-size: 1.2em;
+            }
+
+            .price {
+                font-size: 1.4em;
+                margin-top: 4px;
+                font-weight: bold;
+            }
+        }
+    }
+}
 
 
 

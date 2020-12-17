@@ -2,20 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8014a567-7f8f-4f60-9e07-4b74e2f59d3d" name="Default Changelist" comment="User Information Layout">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/SliderController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Slider.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_12_15_194547_create_sliders_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/slider/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/slider/home.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/ApiJsController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Functions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/static/css/admin.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/static/css/admin.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/static/css/admin.styl" beforeDir="false" afterPath="$PROJECT_DIR$/public/static/css/admin.styl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/static/js/admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/static/js/admin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/categories/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/categories/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/products/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/products/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/sidebar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ContentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ContentController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/static/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/css/style.styl" beforeDir="false" afterPath="$PROJECT_DIR$/public/static/css/style.styl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/js/site.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/static/js/site.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/components/slider_home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/slider_home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -232,7 +227,8 @@
       <workItem from="1607626344595" duration="9025000" />
       <workItem from="1607708529423" duration="12520000" />
       <workItem from="1607966753672" duration="12400000" />
-      <workItem from="1608054863519" duration="14573000" />
+      <workItem from="1608054863519" duration="14904000" />
+      <workItem from="1608136592456" duration="19929000" />
     </task>
     <task id="LOCAL-00001" summary="Ecommerce laravel">
       <created>1602556183998</created>

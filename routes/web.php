@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ConnectController;
 use App\Http\Controllers\ContentController;
 use \App\Http\Controllers\UserController;
+use \App\Http\Controllers\ApiJsController;
 
 
 /*
@@ -37,3 +38,7 @@ Route::get('/account/edit', [UserController::class, 'getAccountEdit'])->name('ac
 Route::post('/account/edit/avatar',[UserController::class, 'postAccountAvatar'])->name('account_avatar_edit');
 Route::post('/account/edit/password',[UserController::class, 'postAccountPassword'])->name('account_password_edit');
 Route::post('/account/edit/info',[UserController::class, 'postAccountInfo'])->name('account_info_edit');
+
+//Ajax Api Routers
+Route::get('/md/api/load/products/{section}', [ApiJsController::class, 'getProductsSection'])->name('apijs');
+

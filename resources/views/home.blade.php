@@ -36,4 +36,9 @@
     <section>
         @include('components.slider_home')
     </section>
+    <section>
+        <div class="products_list" id="products_list">
+
+        </div>
+    </section>
 @endsection
