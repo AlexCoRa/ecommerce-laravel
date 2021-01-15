@@ -18,9 +18,9 @@ class UserController extends Controller
 
     public function getUsers($status) {
         if($status == 'all'):
-            $users = User::orderBy('id', 'Desc')->paginate(10);
+            $users = User::orderBy('id', 'Desc')->paginate(3);
         else:
-            $users = User::where('status', $status)->orderBy('id', 'Desc')->paginate(10);
+            $users = User::where('status', $status)->orderBy('id', 'Desc')->paginate(3);
         endif;
         $data = ['users' => $users];
         return view('admin.users.home', $data);

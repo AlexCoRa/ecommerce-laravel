@@ -104,6 +104,9 @@
                                 <td></td>
                             </tr>
                         @endforeach
+                        <tr>
+                            <td colspan="7">{!! $products->render() !!}</td>
+                        </tr>
                         </tbody>
                     </table>
                 </div>

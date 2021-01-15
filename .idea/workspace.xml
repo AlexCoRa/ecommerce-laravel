@@ -2,15 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8014a567-7f8f-4f60-9e07-4b74e2f59d3d" name="Default Changelist" comment="User Information Layout">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/ApiJsController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ContentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ContentController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/static/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/static/css/style.styl" beforeDir="false" afterPath="$PROJECT_DIR$/public/static/css/style.styl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/static/js/site.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/static/js/site.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/slider_home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/slider_home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/ProductController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/products/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/products/home.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -228,7 +224,9 @@
       <workItem from="1607708529423" duration="12520000" />
       <workItem from="1607966753672" duration="12400000" />
       <workItem from="1608054863519" duration="14904000" />
-      <workItem from="1608136592456" duration="19929000" />
+      <workItem from="1608136592456" duration="20177000" />
+      <workItem from="1610661747939" duration="186000" />
+      <workItem from="1610662362421" duration="3571000" />
     </task>
     <task id="LOCAL-00001" summary="Ecommerce laravel">
       <created>1602556183998</created>

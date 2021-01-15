@@ -25,16 +25,16 @@ class ProductController extends Controller
     public function getHome($status) {
         switch ($status) {
             case '0':
-                $products = Product::with(['cat'])->where('status', '0')->orderBy('id', 'desc')->paginate(25);
+                $products = Product::with(['cat'])->where('status', '0')->orderBy('id', 'desc')->paginate(3);
             break;
             case '1':
-                $products = Product::with(['cat'])->where('status', '1')->orderBy('id', 'desc')->paginate(25);
+                $products = Product::with(['cat'])->where('status', '1')->orderBy('id', 'desc')->paginate(3);
             break;
             case 'all':
-                $products = Product::with(['cat'])->orderBy('id', 'desc')->paginate(25);
+                $products = Product::with(['cat'])->orderBy('id', 'desc')->paginate(3);
             break;
             case 'trash':
-                $products = Product::with(['cat'])->onlyTrashed()->orderBy('id', 'desc')->paginate(25);
+                $products = Product::with(['cat'])->onlyTrashed()->orderBy('id', 'desc')->paginate(3);
             break;
         }
         $data = ['products' => $products];
