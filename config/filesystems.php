@@ -57,11 +57,11 @@ return [
 
         'uploads' => [
             'driver' => 'local',
-            'root' => 'C:/laragon/www/ecommerce/public/uploads',
+            'root' => 'C:/laragon/www/ecommerce-laravel/public/uploads',
         ],
         'uploads_users' => [
             'driver' => 'local',
-            'root' => 'C:/laragon/www/ecommerce/public/uploads_users',
+            'root' => 'C:/laragon/www/ecommerce-laravel/public/uploads_users',
         ],
 
         's3' => [
